@@ -1,0 +1,30 @@
+{
+  "name": "@nayya/config-eslint",
+  "version": "0.0.1",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "nest.js",
+    "react.js",
+    "common.js",
+    "library.js"
+  ],
+  "main": "react.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@vercel/style-guide": "^5.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^2.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "typescript": ">=4.0.0"
+  }
+}

@@ -5,12 +5,15 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "publish-eslint": "cd packages/config-eslint && npm publish"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.2.3",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "@nayya/config-eslint": "workspace:*",
+    "@nayya/config-typescript": "workspace:*"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {

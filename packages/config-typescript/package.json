@@ -1,0 +1,13 @@
+{
+  "name": "@nayya/config-typescript",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "base.json",
+    "react.json"
+  ]
+}

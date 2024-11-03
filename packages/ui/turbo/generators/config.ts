@@ -1,30 +1,59 @@
 import type { PlopTypes } from "@turbo/gen";
 
-// Learn more about Turborepo Generators at https://turbo.build/repo/docs/core-concepts/monorepos/code-generation
 
-export default function generator(plop: PlopTypes.NodePlopAPI): void {
-  // A simple generator to add a new React component to the internal UI library
-  plop.setGenerator("react-component", {
-    description: "Adds a new react component",
+const generator = (plop: PlopTypes.NodePlopAPI): void => {
+  // Helper to convert to PascalCase
+  plop.setHelper('pascalCase', (text) => {
+    return text
+      .split(/[-_\s]/)
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join('');
+  });
+
+  // Helper to convert to camelCase
+  plop.setHelper('camelCase', (text) => {
+    const pascalCased = plop.getHelper('pascalCase')(text);
+    return pascalCased.charAt(0).toLowerCase() + pascalCased.slice(1);
+  });
+
+  // Component generator
+  plop.setGenerator('component', {
+    description: 'Create a new React component',
     prompts: [
       {
-        type: "input",
-        name: "name",
-        message: "What is the name of the component?",
-      },
+        type: 'input',
+        name: 'name',
+        message: 'What is the name of the component?'
+      }
     ],
     actions: [
       {
-        type: "add",
-        path: "src/{{kebabCase name}}.tsx",
-        templateFile: "templates/component.hbs",
+        type: 'add',
+        path: 'src/components/{{pascalCase name}}/index.ts',
+        templateFile: 'plop-templates/index.ts.hbs'
       },
       {
-        type: "append",
-        path: "package.json",
-        pattern: /"exports": {(?<insertion>)/g,
-        template: '    "./{{kebabCase name}}": "./src/{{kebabCase name}}.tsx",',
+        type: 'add',
+        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
+        templateFile: 'plop-templates/Component.tsx.hbs'
       },
-    ],
+      {
+        type: 'add',
+        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.types.ts',
+        templateFile: 'plop-templates/Component.types.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+        templateFile: 'plop-templates/Component.stories.tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.test.ts',
+        templateFile: 'plop-templates/Component.test.ts.hbs'
+      }
+    ]
   });
-}
+};
+
+export default generator;

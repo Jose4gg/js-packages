@@ -1,8 +1,9 @@
-export const {{ pascalCase name }} = ({ children }: { children: React.ReactNode }) => {
+import { {{pascalCase name}}Props } from './{{pascalCase name}}.types';
+
+export const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({}) => {
   return (
     <div>
-      <h1>{{ pascalCase name }} Component</h1>
-      {children}
+      {/* {{pascalCase name}} component */}
     </div>
   );
 };
