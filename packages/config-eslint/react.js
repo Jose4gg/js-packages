@@ -7,6 +7,7 @@ const turbo = require('eslint-config-turbo');
 
 const commonConfig = require('./common');
 
+/** @type {import('@typescript-eslint/utils').TSESLint.ConfigType} */
 module.exports = tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
@@ -16,7 +17,7 @@ module.exports = tseslint.config(
     ...commonConfig,
     plugins: {
       ...commonConfig.plugins,
-      'react': reactPlugin,
+      react: reactPlugin,
       'react-hooks': reactHooksPlugin,
     },
     languageOptions: {
@@ -28,15 +29,15 @@ module.exports = tseslint.config(
       parserOptions: {
         ...commonConfig.languageOptions.parserOptions,
         ecmaFeatures: {
-          jsx: true
-        }
-      }
+          jsx: true,
+        },
+      },
     },
     settings: {
       ...commonConfig.settings,
       react: {
-        version: 'detect'
-      }
+        version: 'detect',
+      },
     },
     rules: {
       ...commonConfig.rules,
@@ -44,6 +45,6 @@ module.exports = tseslint.config(
       'react/jsx-no-useless-fragment': 'warn',
       'react-hooks/exhaustive-deps': 'warn',
       'react/memo': 'warn',
-    }
-  }
+    },
+  },
 );

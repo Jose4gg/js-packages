@@ -1,12 +1,11 @@
-import type { PlopTypes } from "@turbo/gen";
-
+import type { PlopTypes } from '@turbo/gen';
 
 const generator = (plop: PlopTypes.NodePlopAPI): void => {
   // Helper to convert to PascalCase
   plop.setHelper('pascalCase', (text) => {
     return text
       .split(/[-_\s]/)
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
       .join('');
   });
 
@@ -23,36 +22,36 @@ const generator = (plop: PlopTypes.NodePlopAPI): void => {
       {
         type: 'input',
         name: 'name',
-        message: 'What is the name of the component?'
-      }
+        message: 'What is the name of the component?',
+      },
     ],
     actions: [
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/index.ts',
-        templateFile: 'templates/index.hbs'
+        templateFile: 'templates/index.hbs',
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
-        templateFile: 'templates/component.hbs'
+        templateFile: 'templates/component.hbs',
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.types.ts',
-        templateFile: 'templates/component.types.hbs'
+        templateFile: 'templates/component.types.hbs',
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-        templateFile: 'templates/component.stories.hbs'
+        templateFile: 'templates/component.stories.hbs',
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.test.ts',
-        templateFile: 'templates/component.tests.hbs'
-      }
-    ]
+        templateFile: 'templates/component.tests.hbs',
+      },
+    ],
   });
 };
 

@@ -1,5 +1,5 @@
 {
-  "extends": "@nayya/config-eslint/react.json",
+  "extends": "@nayya/config-eslint/react.js",
   "compilerOptions": {
     "outDir": "dist"
   },
