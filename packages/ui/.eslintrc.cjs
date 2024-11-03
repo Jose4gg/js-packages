@@ -1,8 +1,6 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  root: true,
-  // extends: ['./packages/config-eslint/react'],
-  parser: '@typescript-eslint/parser',
+  extends: ['@nayya/config-eslint/react'],
   parserOptions: {
     tsconfigRootDir: __dirname,
   },
