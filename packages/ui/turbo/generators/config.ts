@@ -30,27 +30,27 @@ const generator = (plop: PlopTypes.NodePlopAPI): void => {
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/index.ts',
-        templateFile: 'plop-templates/index.ts.hbs'
+        templateFile: 'templates/index.hbs'
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
-        templateFile: 'plop-templates/Component.tsx.hbs'
+        templateFile: 'templates/component.hbs'
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.types.ts',
-        templateFile: 'plop-templates/Component.types.ts.hbs'
+        templateFile: 'templates/component.types.hbs'
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-        templateFile: 'plop-templates/Component.stories.tsx.hbs'
+        templateFile: 'templates/component.stories.hbs'
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.test.ts',
-        templateFile: 'plop-templates/Component.test.ts.hbs'
+        templateFile: 'templates/component.tests.hbs'
       }
     ]
   });
