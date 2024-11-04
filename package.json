@@ -1,6 +1,9 @@
 {
   "name": "frontend-packages",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -9,15 +12,12 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "publish-eslint": "cd packages/config-eslint && npm publish",
     "prepare": "husky install",
-    "lint-staged": "lint-staged",
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "prettier": "^3.1.0",
     "prettier-plugin-organize-imports": "^3.2.4",
     "turbo": "^2.2.3",
-    "@nayya/config-eslint": "workspace:*",
-    "@nayya/config-typescript": "workspace:*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",
@@ -43,15 +43,8 @@
     "@testing-library/user-event": "^14.5.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-config-turbo": "^2.0.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-only-warn": "^1.1.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "typescript-eslint": "^8.12.2"
+    "@nayya/eslint-config": "workspace:*",
+    "@nayya/config-typescript": "workspace:*"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {

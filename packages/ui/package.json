@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ui",
+  "name": "@nayya/ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -21,6 +21,10 @@
     "dev": "vite build --watch",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@nayya/config-typescript": "workspace:*",
+    "@nayya/eslint-config": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18.2.0",
