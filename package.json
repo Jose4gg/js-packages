@@ -9,7 +9,6 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "publish-eslint": "cd packages/config-eslint && npm publish",
     "prepare": "husky install",
     "typecheck": "turbo run typecheck"
@@ -42,7 +41,6 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
     "@nayya/eslint-config": "workspace:*",
     "@nayya/config-typescript": "workspace:*"
   },
