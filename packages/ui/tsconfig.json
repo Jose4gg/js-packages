@@ -1,5 +1,5 @@
 {
-  "extends": "@nayya/config-typescript/react.json",
+  "extends": "@nayya/tsconfig/react.json",
   "compilerOptions": {
     "outDir": "dist"
   },

@@ -23,7 +23,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@nayya/config-typescript": "workspace:*",
+    "@nayya/tsconfig": "workspace:*",
     "@nayya/eslint-config": "workspace:*"
   },
   "peerDependencies": {
