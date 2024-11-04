@@ -1,5 +1,9 @@
 {
   "name": "@nayya/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nayya-com"
+  },
   "version": "0.0.1",
   "private": false,
   "files": [
