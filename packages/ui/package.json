@@ -19,12 +19,17 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "typecheck": "tsc --noEmit"
+    "lint": "eslint . --ext ts,tsx",
+    "lint:fix": "pnpm lint --fix",
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
-    "@nayya/tsconfig": "workspace:*",
-    "@nayya/eslint-config": "workspace:*"
+    "@nayya-com/tsconfig": "workspace:*",
+    "@nayya-com/eslint-config": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18.2.0",

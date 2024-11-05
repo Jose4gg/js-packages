@@ -8,10 +8,14 @@ const baseConfig = {
     '@typescript-eslint',
     'eslint-plugin-import',
     'eslint-plugin-only-warn',
-    'custom',
     'prettier',
+    'custom',
   ],
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project,
@@ -23,22 +27,8 @@ const baseConfig = {
       },
     },
   },
-  ignorePatterns: ['src/**/*.test.ts', 'src/frontend/generated/*'],
+  ignorePatterns: ['.eslintrc.cjs'],
   rules: {
-    // Prettier
-    'prettier/prettier': [
-      'error',
-      {
-        // Your prettier options - these will be used by ESLint
-        printWidth: 80,
-        tabWidth: 2,
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'es5',
-        bracketSpacing: true,
-        arrowParens: 'avoid',
-      },
-    ],
     // Custom Rules
     'custom/single-purpose-function': 'error',
     'custom/require-named-parameters': 'error',
@@ -47,6 +37,9 @@ const baseConfig = {
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
+
+    // Console Logging
+    'no-console': 'error',
 
     // Naming Conventions
     '@typescript-eslint/naming-convention': [

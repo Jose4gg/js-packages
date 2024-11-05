@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: '@nayya/eslint-config/react',
+  extends: '@nayya-com/eslint-config/react',
 };
