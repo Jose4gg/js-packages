@@ -56,6 +56,7 @@ jobs:
         run: |
           changed=$(bash .github/check-package-changed.sh @nayya-com/tsconfig)
           echo "changed=$changed" >> $GITHUB_OUTPUT
+          echo "Changed value: $changed"
 
       - name: Example of using the output
         if: steps.check-tsconfig.outputs.changed == 'true'
@@ -71,5 +72,5 @@ jobs:
         if: steps.changesets.outputs.hasChangesets == 'true'
         # You can do something when a publish should happen.
         run: |
-          echo "hasChangesets: ${{ steps.changesets.outputs.hasChangesets }}"
+          echo "hasChangesets: ${{ steps.changesets.outputs }}"
           echo "publishedPackages: ${{ steps.changesets.outputs.publishedPackages }}"
