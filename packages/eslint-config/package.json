@@ -1,16 +1,21 @@
 {
-  "name": "@nayya/eslint-config",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Nayya-com"
-  },
+  "name": "@nayya-com/eslint-config",
   "version": "0.0.1",
+  "description": "Shared ESLint configurations",
   "private": false,
+  "main": "react.js",
   "files": [
     "react.js",
     "library.js"
   ],
-  "main": "react.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nayya-com/frontend-packages.git",
+    "directory": "packages/eslint-config"
+  },
+  "scripts": {
+    "publish": "pnpm publish"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.1.0",
