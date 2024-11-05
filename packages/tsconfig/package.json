@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/tsconfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared TypeScript configurations",
   "private": false,
   "license": "MIT",
@@ -10,7 +10,7 @@
     "react.json"
   ],
   "scripts": {
-    "publish": "pnpm version patch && pnpm publish"
+    "publish": "pnpm publish"
   },
   "repository": {
     "type": "git",
