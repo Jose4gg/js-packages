@@ -51,15 +51,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      # - name: Check if tsconfig package has changed
-      #   id: check-tsconfig
-      #   run: |
-      #     changed=$(bash .github/check-package-changed.sh @nayya-com/tsconfig)
-      #     echo "changed=$changed" >> $GITHUB_OUTPUT
+      - name: Check if tsconfig package has changed
+        id: check-tsconfig
+        run: |
+          changed=$(bash .github/check-package-changed.sh @nayya-com/tsconfig)
+          echo "changed=$changed" >> $GITHUB_OUTPUT
 
-      # - name: Example of using the output
-      #   if: steps.check-tsconfig.outputs.changed == 'true'
-      #   run: echo "The tsconfig package has changed"
+      - name: Example of using the output
+        if: steps.check-tsconfig.outputs.changed == 'true'
+        run: echo "The tsconfig package has changed"
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets

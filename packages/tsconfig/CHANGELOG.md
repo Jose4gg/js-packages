@@ -4,4 +4,4 @@
 
 ### Minor Changes
 
-- bar
+- foo
