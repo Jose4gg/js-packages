@@ -58,8 +58,6 @@ jobs:
         run: |
           changed=$(bash .github/check-package-changed.sh @nayya-com/tsconfig ${{ env.COMPARISON_BRANCH }})
           echo "changed=$changed" >> $GITHUB_OUTPUT
-          echo "Changed value: $changed"
-          echo "Comparison branch: ${{ env.COMPARISON_BRANCH }}"
 
       - name: Example of using the output
         if: steps.check-tsconfig.outputs.changed == 'true'
