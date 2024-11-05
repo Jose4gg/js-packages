@@ -51,12 +51,23 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Create and publish versions
+      # - name: Check if tsconfig package has changed
+      #   id: check-tsconfig
+      #   run: |
+      #     changed=$(bash .github/check-package-changed.sh @nayya-com/tsconfig)
+      #     echo "changed=$changed" >> $GITHUB_OUTPUT
+
+      # - name: Example of using the output
+      #   if: steps.check-tsconfig.outputs.changed == 'true'
+      #   run: echo "The tsconfig package has changed"
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
         uses: changesets/action@v1
-        with:
-          publish: pnpm publish-packages
-          commit: 'chore: version packages'
-          title: 'chore: version packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_ACCESS_TOKEN }}
+
+      - name: Publish
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        # You can do something when a publish should happen.
+        run: yarn publish
