@@ -53,25 +53,30 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Check if tsconfig package has changed
-        id: check-tsconfig
+      - name: Check package changes and changesets
+        id: check-package-changes
         run: |
-          changed=$(bash .github/check-package-changed.sh @nayya-com/tsconfig ${{ env.COMPARISON_BRANCH }})
-          echo "changed=$changed" >> $GITHUB_OUTPUT
+          # Define array of packages to check
+          packages=("@nayya-com/tsconfig" "@nayya-com/eslint-config" "@nayya-com/prettier-config")
 
-      - name: Example of using the output
-        if: steps.check-tsconfig.outputs.changed == 'true'
-        run: echo "The tsconfig package has changed"
+          # Loop through each package
+          for package_name in "${packages[@]}"; do
+            echo "Checking package: $package_name"
+            changed=$(bash .github/check-package-changed.sh "$package_name" ${{ env.COMPARISON_BRANCH }})
+            
+            if [ "$changed" = "true" ]; then
+              output=$(pnpm changeset status)
+              if echo "$output" | grep -q "$package_name"; then
+                echo "Found $package_name in changesets"
+              else
+                echo "No changes found for $package_name in changesets, but the package has changed. Please make a changeset for it."
+                exit 1
+              fi
+            fi
+          done
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish
-        if: steps.changesets.outputs.hasChangesets == 'true'
-        # You can do something when a publish should happen.
-        run: |
-          echo "hasChangesets: $(echo '${{ toJSON(steps.changesets.outputs) }}')"
-          echo "publishedPackages: ${{ steps.changesets.outputs.publishedPackages }}"
