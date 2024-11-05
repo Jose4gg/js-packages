@@ -14,7 +14,7 @@
     "directory": "packages/eslint-config"
   },
   "scripts": {
-    "publish": "pnpm version patch && pnpm publish"
+    "publish-package": "pnpm version patch && pnpm publish"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.18.0",

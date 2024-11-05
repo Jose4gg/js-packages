@@ -12,7 +12,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "prepare": "husky install",
     "typecheck": "turbo run typecheck",
-    "publish-packages": "turbo publish"
+    "publish-packages": "turbo publish-package"
   },
   "devDependencies": {
     "prettier": "^3.1.0",
