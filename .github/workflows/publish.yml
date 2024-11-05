@@ -68,7 +68,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish
-        if: steps.changesets.outputs.hasChangesets == 'false'
+        if: steps.changesets.outputs.hasChangesets == 'true'
         # You can do something when a publish should happen.
         run: |
           echo "hasChangesets: ${{ steps.changesets.outputs.hasChangesets }}"
