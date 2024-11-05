@@ -1,7 +1,6 @@
 {
   "name": "frontend-packages",
   "private": true,
-  "version": "0.0.1",
   "workspaces": [
     "packages/*"
   ],
@@ -12,7 +11,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "prepare": "husky install",
     "typecheck": "turbo run typecheck",
-    "publish": "turbo publish"
+    "publish-packages": "turbo publish"
   },
   "devDependencies": {
     "prettier": "^3.1.0",
