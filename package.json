@@ -12,7 +12,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "prepare": "husky install",
     "typecheck": "turbo run typecheck",
-    "publish-packages": "turbo publish-package"
+    "publish-packages": "turbo run lint && changeset version && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.9",
