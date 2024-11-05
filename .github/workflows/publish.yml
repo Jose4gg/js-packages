@@ -16,13 +16,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@nayya-com'
 
       - name: Setup PNPM
         uses: pnpm/action-setup@v2
@@ -42,14 +42,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Create .npmrc
+        run: |
+          echo "@nayya-com:registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_ACCESS_TOKEN }}" >> .npmrc
+
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build packages
-        run: pnpm build
-
-      - name: Publish packages
-        run: pnpm publish-packages
+      - name: Publish changed packages
+        run: pnpm turbo publish-package --filter=[HEAD^1]
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_ACCESS_TOKEN }}
-          NPM_CONFIG_REGISTRY: https://npm.pkg.github.com 

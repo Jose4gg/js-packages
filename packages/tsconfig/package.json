@@ -10,7 +10,7 @@
     "react.json"
   ],
   "scripts": {
-    "publish-package": "pnpm version patch && pnpm publish"
+    "publish-package": "pnpm publish"
   },
   "repository": {
     "type": "git",
