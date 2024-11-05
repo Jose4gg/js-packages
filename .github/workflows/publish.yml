@@ -56,7 +56,7 @@ jobs:
       - name: Check if tsconfig package has changed
         id: check-tsconfig
         run: |
-          changed=$(bash .github/check-package-changed.sh ${{ env.COMPARISON_BRANCH }})
+          changed=$(bash .github/check-package-changed.sh @nayya-com/tsconfig ${{ env.COMPARISON_BRANCH }})
           echo "changed=$changed" >> $GITHUB_OUTPUT
           echo "Changed value: $changed"
           echo "Comparison branch: ${{ env.COMPARISON_BRANCH }}"
