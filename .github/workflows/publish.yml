@@ -56,8 +56,8 @@ jobs:
       - name: Check package changes and changesets
         id: check-package-changes
         run: |
-          # Define array of packages to check
-          packages=("@nayya-com/tsconfig" "@nayya-com/eslint-config" "@nayya-com/prettier-config")
+          # Get all package names from the packages directory
+          packages=($(ls packages | sed 's/^/@nayya-com\//' | tr '\n' ' '))
 
           # Loop through each package
           for package_name in "${packages[@]}"; do
