@@ -1,6 +1,5 @@
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
-import dts from 'rollup-plugin-dts';
 
 export default [
   {
@@ -8,25 +7,19 @@ export default [
     output: [
       {
         file: 'lib/index.js',
-        format: 'esm',
+        format: 'esm', // The format of the output bundle
         sourcemap: true,
         exports: 'named',
-        globals: {},
+        globals: {}, // The global variable names corresponding to external modules
       },
     ],
     plugins: [
-      resolve(),
+      resolve(), // So Rollup can find external modules
       typescript({
         tsconfig: './tsconfig.json',
         useTsconfigDeclarationDir: true,
       }),
     ],
-    external: ['styled-components'],
-  },
-  {
-    input: 'src/index.ts',
-    output: [{ file: 'lib/index.d.ts', format: 'es' }],
-    plugins: [dts()],
     external: ['styled-components'],
   },
 ];
