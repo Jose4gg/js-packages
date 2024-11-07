@@ -1,5 +1,11 @@
 # @nayya-com/eslint-config
 
+## 0.0.9
+
+### Patch Changes
+
+- d55a28c: more lenient ts eslint rules
+
 ## 0.0.8
 
 ### Patch Changes
