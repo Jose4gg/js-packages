@@ -57,7 +57,7 @@ jobs:
         id: check-package-changes
         run: |
           # Get all package names from the packages directory
-          packages=("@nayya-com/eslint-config" "@nayya-com/tsconfig")
+          packages=("@nayya-com/eslint-config" "@nayya-com/tsconfig" "@nayya-com/eslint-plugin-custom")
 
           # Loop through each package
           for package_name in "${packages[@]}"; do
