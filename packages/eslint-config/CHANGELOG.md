@@ -1,5 +1,11 @@
 # @nayya-com/eslint-config
 
+## 0.0.8
+
+### Patch Changes
+
+- 8b19704: update tslint rules
+
 ## 0.0.7
 
 ### Patch Changes
