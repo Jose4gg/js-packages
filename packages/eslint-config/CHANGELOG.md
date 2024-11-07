@@ -1,5 +1,13 @@
 # @nayya-com/eslint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- c743acb: add ts support on ly for typescript eslint parser
+- Updated dependencies [eac3ed9]
+  - @nayya-com/eslint-plugin-custom@0.0.4
+
 ## 0.0.6
 
 ### Patch Changes
