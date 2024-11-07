@@ -1,5 +1,13 @@
 # @nayya-com/eslint-config
 
+## 0.0.6
+
+### Patch Changes
+
+- 60f51e2: add common to exports
+- Updated dependencies [549fad9]
+  - @nayya-com/eslint-plugin-custom@0.0.3
+
 ## 0.0.5
 
 ### Patch Changes
