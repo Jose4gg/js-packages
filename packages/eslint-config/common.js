@@ -15,6 +15,7 @@ const baseConfig = [
     languageOptions: {
       parser: require('@typescript-eslint/parser'),
       parserOptions: {
+        files: ['**/*.ts', '**/*.tsx'],
         project,
       },
     },
