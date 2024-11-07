@@ -69,7 +69,7 @@ jobs:
               if echo "$output" | grep -q "$package_name"; then
                 echo "Found $package_name in changesets"
               else
-                echo "No changes found for $package_name in changesets, but the package has changed. Please make a changeset for it."
+                echo "No changes found for $package_name in changesets, but the package has changed or global files have changed. Please make a changeset for it."
                 exit 1
               fi
             fi
