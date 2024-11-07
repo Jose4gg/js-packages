@@ -37,7 +37,8 @@ const customRulesPlugin = {
       meta: {
         type: 'suggestion',
         docs: {
-          description: 'Enforce using named parameters for functions with multiple parameters',
+          description:
+            'Enforce using named parameters for functions with multiple parameters (except callbacks)',
           recommended: false,
         },
         hasSuggestions: true,
@@ -65,6 +66,9 @@ const customRulesPlugin = {
           const params = node.params;
           if (params.length <= 1) return;
           if (params[0].type === 'ObjectPattern') return;
+
+          // Skip if this is a callback function (passed as argument)
+          if (node.parent.type === 'CallExpression') return;
 
           const firstParamTypeAnnotation = params[0].typeAnnotation?.typeAnnotation;
           if (
