@@ -1,19 +1,32 @@
 const { resolve } = require('node:path');
+const eslintJs = require('@eslint/js');
+const typescriptEslint = require('typescript-eslint');
+const eslintConfigPrettier = require('eslint-config-prettier');
+const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
+const typescriptEslintParser = require('@typescript-eslint/parser');
+const eslintPluginImport = require('eslint-plugin-import');
+const eslintPluginOnlyWarn = require('eslint-plugin-only-warn');
+const eslintPluginPrettier = require('eslint-plugin-prettier');
+const eslintPluginCustom = require('@nayya-com/eslint-plugin-custom');
 
 const project = resolve(process.cwd(), 'tsconfig.json');
 
 /** @type {import("@typescript-eslint/utils").TSESLint.FlatConfig.Config[]} */
 const baseConfig = [
+  eslintJs.configs.recommended,
+  ...typescriptEslint.configs.recommended,
+  eslintConfigPrettier,
   {
     plugins: {
-      '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
-      import: require('eslint-plugin-import'),
-      'only-warn': require('eslint-plugin-only-warn'),
-      prettier: require('eslint-plugin-prettier'),
-      '@nayya-com/eslint-plugin-custom': require('@nayya-com/eslint-plugin-custom'),
+      '@typescript-eslint': typescriptEslintPlugin,
+      import: eslintPluginImport,
+      'only-warn': eslintPluginOnlyWarn,
+      prettier: eslintPluginPrettier,
+      '@nayya-com/eslint-plugin-custom': eslintPluginCustom,
     },
+    ignores: ['**/build/**', '**/dist/**', '**/node_modules/**'],
     languageOptions: {
-      parser: require('@typescript-eslint/parser'),
+      parser: typescriptEslintParser,
       parserOptions: {
         files: ['**/*.ts', '**/*.tsx'],
         project,
@@ -35,6 +48,8 @@ const baseConfig = [
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/strict-boolean-expressions': 'error',
+      '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
 
       // Console Logging
       'no-console': 'error',
@@ -74,9 +89,6 @@ const baseConfig = [
       'no-throw-literal': 'error',
     },
   },
-  // require('eslint/conf/eslint-recommended'),
-  // require('@typescript-eslint/eslint-plugin').configs.recommended,
-  // require('eslint-config-prettier'),
 ];
 
 module.exports = baseConfig;
