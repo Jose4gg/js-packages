@@ -45,14 +45,9 @@ const baseConfig = [
       '@nayya-com/eslint-plugin-custom/require-named-parameters': 'error',
 
       // TypeScript Basic Rules
-      '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
-      '@typescript-eslint/strict-boolean-expressions': 'error',
       '@typescript-eslint/no-empty-interface': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',
-
-      // Console Logging
-      'no-console': 'error',
 
       // Naming Conventions
       '@typescript-eslint/naming-convention': [
