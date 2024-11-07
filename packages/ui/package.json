@@ -30,9 +30,5 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@nayya-com/eslint-config": "workspace:*",
-    "@nayya-com/tsconfig": "workspace:*"
   }
 }
