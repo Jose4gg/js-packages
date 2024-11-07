@@ -12,8 +12,12 @@ const customRulesPlugin = {
         type: 'suggestion',
         docs: {
           description: 'Enforce functions to have less than 20 instructions',
+          recommended: false,
         },
         schema: [], // no options
+        messages: {
+          tooManyInstructions: 'Function should have less than 20 instructions/statements',
+        },
       },
       create(context) {
         return {
@@ -22,7 +26,7 @@ const customRulesPlugin = {
             if (functionBody.length > 20) {
               context.report({
                 node,
-                message: 'Function should have less than 20 instructions/statements',
+                messageId: 'tooManyInstructions',
               });
             }
           },
@@ -34,9 +38,15 @@ const customRulesPlugin = {
         type: 'suggestion',
         docs: {
           description: 'Enforce using named parameters for functions with multiple parameters',
+          recommended: false,
         },
         hasSuggestions: true,
         schema: [], // no options
+        messages: {
+          useNamedParameters:
+            'Functions with multiple parameters should use named parameters (object destructuring)',
+          convertToNamedParameters: 'Convert to named parameters',
+        },
       },
       create(context) {
         return {
@@ -71,16 +81,14 @@ const customRulesPlugin = {
             functionName = node.parent.id.name;
           }
 
-          const message = functionName
-            ? `Function '${functionName}' with multiple parameters should use named parameters (object destructuring)`
-            : 'Functions with multiple parameters should use named parameters (object destructuring)';
+          const messageId = functionName ? 'useNamedParameters' : 'useNamedParameters';
 
           context.report({
             node,
-            message,
+            messageId,
             suggest: [
               {
-                desc: 'Convert to named parameters',
+                messageId: 'convertToNamedParameters',
                 fix: (fixer) => {
                   const paramNames = params.map((p) =>
                     p.type === 'Identifier' ? p.name : 'param',

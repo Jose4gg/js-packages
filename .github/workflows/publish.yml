@@ -74,7 +74,8 @@ jobs:
               fi
             fi
           done
-      - name: Create Release Pull Request or Publish to npm
+
+      - name: Commit version updates and publish to github packages
         id: changesets
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -14,26 +14,26 @@
     "directory": "packages/eslint-config"
   },
   "scripts": {
-    "publish-package": "pnpm version patch && pnpm publish"
+    "publish-package": "pnpm publish"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.1.0",
+    "@nayya-com/eslint-plugin-custom": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
+    "@typescript-eslint/parser": "^8.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-turbo": "^2.0.0",
     "eslint-import-resolver-typescript": "^3.5.5",
-    "eslint-plugin-custom": "file:./eslint-plugin-custom",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "prettier": "^3.1.0",
-    "typescript-eslint": "^8.12.2"
+    "eslint-plugin-storybook": "^0.11.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0",
-    "typescript": ">=4.0.0"
+    "eslint": ">=9.0.0",
+    "typescript": ">=5.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
