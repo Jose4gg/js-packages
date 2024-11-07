@@ -6,7 +6,8 @@
   "main": "react.js",
   "files": [
     "react.js",
-    "library.js"
+    "library.js",
+    "common.js"
   ],
   "repository": {
     "type": "git",
