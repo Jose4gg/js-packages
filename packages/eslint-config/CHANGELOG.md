@@ -1,5 +1,11 @@
 # @nayya-com/eslint-config
 
+## 0.0.10
+
+### Patch Changes
+
+- b97ff80: update named function check to exclude callbacks
+
 ## 0.0.9
 
 ### Patch Changes

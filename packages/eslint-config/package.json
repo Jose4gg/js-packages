@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/eslint-config",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Shared ESLint configurations",
   "private": false,
   "main": "react.js",
