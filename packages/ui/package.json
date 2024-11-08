@@ -21,11 +21,14 @@
     "dev": "vite build --watch",
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "pnpm tsc --noEmit",
     "storybook": "storybook dev -p 6006",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4"
   },
   "peerDependencies": {
     "react": "^18.2.0",
