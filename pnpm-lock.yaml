@@ -236,6 +236,9 @@ importers:
       styled-components:
         specifier: 5.3.9
         version: 5.3.9(@babel/core@7.26.0)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)
+      typescript:
+        specifier: 5.5.4
+        version: 5.5.4
     devDependencies:
       '@rollup/plugin-node-resolve':
         specifier: ^15.1.0

@@ -13,7 +13,7 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs",
     "test": "echo test",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "pnpm tsc --noEmit",
     "publish-package": "pnpm build && pnpm publish"
   },
   "dependencies": {
@@ -22,7 +22,8 @@
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "react-router-dom": "^6.4.2",
-    "styled-components": "5.3.9"
+    "styled-components": "5.3.9",
+    "typescript": "5.5.4"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.1.0",
