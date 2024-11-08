@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/wardrobe",
-  "version": "0.10.4",
+  "version": "0.0.1",
   "types": "lib/types/src/index.d.ts",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -13,6 +13,7 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs",
     "test": "echo test",
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "publish-package": "pnpm build && pnpm publish"
   },
   "dependencies": {

@@ -3,18 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./lib/style.css"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
     "build": "vite build",
