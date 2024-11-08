@@ -22,7 +22,7 @@ import { nayyaTheme, adpTheme } from 'nayya-wardrobe-json/lib/nayya';
 
 and use them with [styled components theme provider.](https://styled-components.com/docs/advanced)
 
-You can setup [styled components global styles.](https://styled-components.com/docs/api#createglobalstyle) like this
+You can setup [styled components global styles.](https://styled-components.com/docs/api#createglobalstyle)
 
 ```
 import { NayyaStyles } from 'nayya-wardrobe-json';
