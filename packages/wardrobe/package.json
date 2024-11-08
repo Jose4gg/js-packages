@@ -12,6 +12,7 @@
     "build-app": "npx webpack --mode production --progress --config webpack.config.js",
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs",
     "test": "echo test",
+    "lint": "eslint .",
     "publish-package": "pnpm build && pnpm publish"
   },
   "dependencies": {

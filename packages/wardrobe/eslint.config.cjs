@@ -6,12 +6,10 @@ module.exports = [
   {
     ignores: [
       'eslint.config.cjs',
-      '.storybook/**',
-      'dist/**',
+      'lib/**',
       'babel.config.js',
-      'deployments/**',
-      'public/mockServiceWorker.js',
-      'vite.config.js',
+      'rollup.config.mjs',
+      'webpack.config.js',
     ],
   },
 ];
