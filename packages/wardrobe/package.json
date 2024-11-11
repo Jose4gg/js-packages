@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/wardrobe",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "types": "lib/types/src/index.d.ts",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
