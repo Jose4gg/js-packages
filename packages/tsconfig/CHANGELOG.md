@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.5
+
+### Patch Changes
+
+- 964d06d: bump
+
 ## 0.1.4
 
 ### Patch Changes
