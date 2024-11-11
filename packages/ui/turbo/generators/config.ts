@@ -54,5 +54,4 @@ const generator = (plop: PlopTypes.NodePlopAPI): void => {
     ],
   });
 };
-
 export default generator;
