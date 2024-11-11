@@ -4,9 +4,9 @@
   "description": "Shared TypeScript configurations",
   "private": false,
   "license": "MIT",
-  "main": "base.json",
+  "main": "common.json",
   "files": [
-    "base.json",
+    "common.json",
     "react.json"
   ],
   "scripts": {

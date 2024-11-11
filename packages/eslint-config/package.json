@@ -3,7 +3,7 @@
   "version": "0.0.13",
   "description": "Shared ESLint configurations",
   "private": false,
-  "main": "react.js",
+  "main": "common.js",
   "files": [
     "react.js",
     "common.js"

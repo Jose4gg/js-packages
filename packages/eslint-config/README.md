@@ -1,8 +1,8 @@
-# `@turbo/eslint-config`
+# `@nayya-com/eslint-config`
 
-Collection of internal eslint configurations.
+## Example usage
 
-Example of how to use the react config:
+For react projects:
 
 ```js
 const eslintConfigReact = require('@nayya-com/eslint-config/react');
@@ -12,11 +12,23 @@ module.exports = [
   ...eslintConfigReact,
   {
     ignores: [
-      'eslint.config.cjs',
-      'lib/**',
-      'babel.config.js',
-      'rollup.config.mjs',
-      'webpack.config.js',
+      /** all files that eslint should ignore */
+    ],
+  },
+];
+```
+
+For non-react projects:
+
+```js
+const eslintConfigCommon = require('@nayya-com/eslint-config/common');
+
+/** @type {import("@typescript-eslint/utils").TSESLint.FlatConfig.Config[]} */
+module.exports = [
+  ...eslintConfigCommon,
+  {
+    ignores: [
+      /** all files that eslint should ignore */
     ],
   },
 ];
