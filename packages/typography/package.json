@@ -1,0 +1,40 @@
+{
+  "name": "@nayya-com/typography",
+  "version": "0.0.5",
+  "types": "lib/types/src/index.d.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs",
+    "build-app": "npx webpack --mode production --progress --config webpack.config.js",
+    "dev": "npx webpack serve --config webpack.config.js --mode development",
+    "lint": "eslint .",
+    "publish-package": "pnpm publish",
+    "test": "echo test",
+    "typecheck": "pnpm tsc --noEmit",
+    "prepare": "pnpm build"
+  },
+  "dependencies": {
+    "@nayya-com/wardrobe": "0.0.6",
+    "classnames": "^2.5.1",
+    "react": "^18.2.0",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@types/styled-components": "^5.1.34",
+    "rollup": "^3.26.0",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "latest"
+  }
+}
