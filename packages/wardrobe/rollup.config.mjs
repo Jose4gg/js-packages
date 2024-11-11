@@ -6,15 +6,22 @@ export default [
     input: ['src/index.ts'],
     output: [
       {
-        file: 'lib/index.js',
-        format: 'esm', // The format of the output bundle
+        file: 'lib/index.mjs',
+        format: 'esm',
         sourcemap: true,
         exports: 'named',
-        globals: {}, // The global variable names corresponding to external modules
+        globals: {},
+      },
+      {
+        file: 'lib/index.js',
+        format: 'cjs',
+        sourcemap: true,
+        exports: 'named',
+        globals: {},
       },
     ],
     plugins: [
-      resolve(), // So Rollup can find external modules
+      resolve(),
       typescript({
         tsconfig: './tsconfig.json',
         useTsconfigDeclarationDir: true,

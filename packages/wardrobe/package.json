@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "types": "lib/types/src/index.d.ts",
   "main": "lib/index.js",
-  "module": "lib/index.js",
+  "module": "lib/index.mjs",
   "files": [
     "lib"
   ],
@@ -32,5 +32,11 @@
     "rollup": "^3.26.0",
     "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-typescript2": "^0.35.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js"
+    }
   }
 }
