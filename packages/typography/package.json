@@ -30,6 +30,8 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@nayya-com/eslint-config": "workspace:*",
+    "@nayya-com/tsconfig": "workspace:*",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/styled-components": "^5.1.34",

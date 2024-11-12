@@ -28,6 +28,8 @@
     "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@nayya-com/eslint-config": "workspace:*",
+    "@nayya-com/tsconfig": "workspace:*",
     "typescript": "5.5.4"
   },
   "peerDependencies": {
