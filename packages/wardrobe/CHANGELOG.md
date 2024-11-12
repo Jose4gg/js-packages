@@ -1,5 +1,11 @@
 # @nayya-com/wardrobe
 
+## 0.0.6
+
+### Patch Changes
+
+- 5b63732: do a commonjs export as well as a module export
+
 ## 0.0.5
 
 ### Patch Changes
