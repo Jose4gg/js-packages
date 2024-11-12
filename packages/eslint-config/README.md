@@ -2,7 +2,7 @@
 
 ## Example usage
 
-For react projects:
+For react projects
 
 ```js
 const eslintConfigReact = require('@nayya-com/eslint-config/react');
