@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/typography",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "types": "lib/types/src/index.d.ts",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -24,7 +24,7 @@
     "prepare": "pnpm build"
   },
   "dependencies": {
-    "@nayya-com/wardrobe": "0.0.6",
+    "@nayya-com/wardrobe": "0.0.7",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"

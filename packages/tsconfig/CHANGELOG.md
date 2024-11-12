@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.7
+
+### Patch Changes
+
+- c371440: update eslint and tsconfig dependency install
+
 ## 0.1.6
 
 ### Patch Changes

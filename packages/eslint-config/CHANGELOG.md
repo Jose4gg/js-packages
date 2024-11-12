@@ -1,5 +1,13 @@
 # @nayya-com/eslint-config
 
+## 0.0.15
+
+### Patch Changes
+
+- c371440: update eslint and tsconfig dependency install
+- Updated dependencies [c371440]
+  - @nayya-com/eslint-plugin-custom@0.0.9
+
 ## 0.0.14
 
 ### Patch Changes

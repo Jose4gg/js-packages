@@ -1,5 +1,11 @@
 # @nayya-com/wardrobe
 
+## 0.0.7
+
+### Patch Changes
+
+- c371440: update eslint and tsconfig dependency install
+
 ## 0.0.6
 
 ### Patch Changes
