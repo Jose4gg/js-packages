@@ -201,7 +201,7 @@ importers:
   packages/typography:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.6
+        specifier: workspace:*
         version: link:../wardrobe
       classnames:
         specifier: ^2.5.1
