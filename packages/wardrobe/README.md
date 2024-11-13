@@ -1,4 +1,4 @@
-# nayya-wardrobe-json
+# @nayya-com/wardrobe
 
 Nayya's Dream Closet
 
@@ -17,7 +17,7 @@ Includes
 import the themes
 
 ```
-import { nayyaTheme, adpTheme } from 'nayya-wardrobe-json/lib/nayya';
+import { nayyaTheme, adpTheme } from '@nayya-com/wardrobe/lib/nayya';
 ```
 
 and use them with [styled components theme provider.](https://styled-components.com/docs/advanced)
@@ -25,7 +25,7 @@ and use them with [styled components theme provider.](https://styled-components.
 You can setup [styled components global styles.](https://styled-components.com/docs/api#createglobalstyle)
 
 ```
-import { NayyaStyles } from 'nayya-wardrobe-json';
+import { NayyaStyles } from '@nayya-com/wardrobe';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -39,7 +39,7 @@ export { GlobalStyle };
 Finally, in order to get the theme typings working properly you need to create a `styled.d.ts` alongside your custom types ex: `src/types/styled.d.ts`. Put this code into your `styled.d.ts`
 
 ```
-import { ThemeObject } from 'nayya-wardrobe-json/lib/styled';
+import { ThemeObject } from '@nayya-com/wardrobe/lib/styled';
 import 'styled-components';
 
 declare module 'styled-components' {

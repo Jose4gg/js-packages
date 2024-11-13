@@ -19,9 +19,6 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",
-    "lint": "eslint .",
-    "lint:fix": "pnpm lint --fix",
-    "typecheck": "pnpm tsc --noEmit",
     "storybook": "storybook dev -p 6006",
     "test": "vitest run",
     "test:watch": "vitest",
