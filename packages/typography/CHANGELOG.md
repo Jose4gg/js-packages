@@ -1,5 +1,13 @@
 # @nayya-com/typography
 
+## 0.0.7
+
+### Patch Changes
+
+- f2a7f4b: update
+- Updated dependencies [f2a7f4b]
+  - @nayya-com/wardrobe@0.0.8
+
 ## 0.0.6
 
 ### Patch Changes

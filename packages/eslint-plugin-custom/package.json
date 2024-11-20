@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/eslint-plugin-custom",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "custom eslint plugin",
   "keywords": [
     "eslint",
