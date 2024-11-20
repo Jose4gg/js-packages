@@ -1,5 +1,12 @@
 # @nayya-com/typography
 
+## 0.0.8
+
+### Patch Changes
+
+- b9b51b5: types for typography
+  - @nayya-com/wardrobe@0.0.8
+
 ## 0.0.7
 
 ### Patch Changes
