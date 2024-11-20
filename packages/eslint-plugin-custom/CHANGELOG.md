@@ -1,5 +1,11 @@
 # @nayya-com/eslint-plugin-custom
 
+## 0.0.12
+
+### Patch Changes
+
+- aa1e8dc: bump
+
 ## 0.0.11
 
 ### Patch Changes
