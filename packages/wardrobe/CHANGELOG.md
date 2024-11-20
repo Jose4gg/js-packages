@@ -1,5 +1,11 @@
 # @nayya-com/wardrobe
 
+## 0.0.8
+
+### Patch Changes
+
+- f2a7f4b: update
+
 ## 0.0.7
 
 ### Patch Changes

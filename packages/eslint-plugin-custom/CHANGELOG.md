@@ -1,5 +1,11 @@
 # @nayya-com/eslint-plugin-custom
 
+## 0.0.11
+
+### Patch Changes
+
+- f2a7f4b: update
+
 ## 0.0.10
 
 ### Patch Changes

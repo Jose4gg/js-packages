@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.8
+
+### Patch Changes
+
+- f2a7f4b: update
+
 ## 0.1.7
 
 ### Patch Changes

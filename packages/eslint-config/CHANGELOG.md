@@ -1,5 +1,13 @@
 # @nayya-com/eslint-config
 
+## 0.0.17
+
+### Patch Changes
+
+- f2a7f4b: update
+- Updated dependencies [f2a7f4b]
+  - @nayya-com/eslint-plugin-custom@0.0.11
+
 ## 0.0.16
 
 ### Patch Changes
