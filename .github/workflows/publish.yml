@@ -51,7 +51,7 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_ACCESS_TOKEN }}" >> .npmrc
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Check package changes and changesets
         id: check-package-changes
