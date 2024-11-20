@@ -17,19 +17,26 @@
     "lib"
   ],
   "scripts": {
-    "build": "vite build",
-    "dev": "vite build --watch",
-    "lint": "eslint .",
-    "lint:fix": "pnpm lint --fix",
-    "typecheck": "pnpm tsc --noEmit",
     "storybook": "storybook dev -p 6006",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
     "@nayya-com/eslint-config": "workspace:*",
     "@nayya-com/tsconfig": "workspace:*",
+    "@storybook/addon-essentials": "^8.4.4",
+    "@storybook/addon-interactions": "^8.4.4",
+    "@storybook/addon-onboarding": "^8.4.4",
+    "@storybook/blocks": "^8.4.4",
+    "@storybook/core-events": "^8.4.4",
+    "@storybook/preview-api": "^8.4.4",
+    "@storybook/react": "^8.4.4",
+    "@storybook/react-vite": "^8.4.4",
+    "@storybook/test": "^8.4.4",
+    "storybook": "^8.4.4",
     "typescript": "5.5.4"
   },
   "peerDependencies": {

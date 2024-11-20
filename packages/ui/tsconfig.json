@@ -1,8 +1,5 @@
 {
-  "extends": "@nayya-com/tsconfig/react.json",
-  "compilerOptions": {
-    "outDir": "dist"
-  },
-  "include": ["./**/*.ts", "./**/*.tsx"],
+  "extends": "@nayya-com/tsconfig/react-app.json",
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "dist"]
 }

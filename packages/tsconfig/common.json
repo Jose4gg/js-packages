@@ -2,32 +2,43 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    // Module settings
+    "module": "ESNext",
+    "moduleResolution": "node",
     "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+
+    // Emit settings
+    "declaration": false,
+    "declarationMap": true,
+    "removeComments": true,
     "sourceMap": true,
+    "inlineSources": false,
     "incremental": true,
     "skipLibCheck": true,
-    "noImplicitAny": true,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
-    "allowJs": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "inlineSources": false,
-    "isolatedModules": false,
-    "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveWatchOutput": true,
+
+    // Decorator settings
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    // Type checking
     "strict": true,
-    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
     "strictNullChecks": true,
     "strictBindCallApply": false,
-    "resolveJsonModule": true
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // JavaScript support
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "preserveWatchOutput": true
   }
 }

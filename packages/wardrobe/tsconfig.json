@@ -1,15 +1,6 @@
 {
-  "extends": "@nayya-com/tsconfig/react.json",
+  "extends": "@nayya-com/tsconfig/react-library.json",
   "compilerOptions": {
-    /* Strict Type-Checking Options */
-    "outDir": "./lib",
-    "declaration": true,
-    "declarationDir": "./lib/types",
-    "module": "ESNext",
-    "allowJs": false,
-    "target": "es5",
-    "lib": ["es6", "dom"],
-    "rootDir": "./",
     "baseUrl": "./",
     "paths": {
       "types": ["./src/types"],
@@ -17,6 +8,6 @@
       "themes": ["./src/themes/index"]
     }
   },
-  "include": ["src", "app"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["./**/*.ts", "./**/*.tsx"],
+  "exclude": ["node_modules", "lib"]
 }

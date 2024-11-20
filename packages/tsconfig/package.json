@@ -4,10 +4,10 @@
   "description": "Shared TypeScript configurations",
   "private": false,
   "license": "MIT",
-  "main": "common.json",
   "files": [
     "common.json",
-    "react.json"
+    "react-app.json",
+    "react-library.json"
   ],
   "scripts": {
     "publish-package": "pnpm publish"

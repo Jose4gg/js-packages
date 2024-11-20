@@ -10,14 +10,12 @@ const CustomHeader = styled(Typography)`
 `;
 
 export default {
-  title: 'Typography',
+  title: '@nayya-com/typography',
   component: Typography,
 } as Meta;
 
 const Template: Story<TypographyProps> = (args) => <Typography {...args} />;
-const CustomTemplate: Story<TypographyProps> = (args) => (
-  <CustomHeader {...args} />
-);
+const CustomTemplate: Story<TypographyProps> = (args) => <CustomHeader {...args} />;
 
 export const Heading = Template.bind({});
 Heading.args = {
@@ -95,6 +93,5 @@ export const CustomHeaderWithAsTag = CustomTemplate.bind({});
 CustomHeaderWithAsTag.args = {
   variant: 'h3',
   asTag: 'h1',
-  children:
-    'This component extends Typography and uses asTag to use h1 tag with h3 styles',
+  children: 'This component extends Typography and uses asTag to use h1 tag with h3 styles',
 };
