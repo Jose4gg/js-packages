@@ -1,5 +1,14 @@
 # text-input
 
+## 0.0.5
+
+### Patch Changes
+
+- b9b51b5: types for typography
+- Updated dependencies [b9b51b5]
+  - @nayya-com/typography@0.0.8
+  - @nayya-com/wardrobe@0.0.8
+
 ## 0.0.4
 
 ### Patch Changes
