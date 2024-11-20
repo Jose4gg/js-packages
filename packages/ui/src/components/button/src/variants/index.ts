@@ -2,20 +2,28 @@ import { Theme, ThemeConfig } from '@nayya-com/wardrobe';
 
 import { variantPadding } from './sizes';
 
-export const getCommonStyles = (theme: Theme, mini: boolean, fullWidth: boolean) => {
+export const getCommonStyles = ({
+  theme,
+  mini,
+  fullWidth,
+}: {
+  theme: Theme;
+  mini: boolean;
+  fullWidth: boolean;
+}) => {
   const themeConfig: ThemeConfig = theme.config;
   const mode = mini ? 'mini' : 'common';
   return {
     fontSize: themeConfig.button.fonts[mode].fontSize,
     fontWeight: themeConfig.button.fonts[mode].fontWeight,
     width: fullWidth ? '100%' : 'auto',
-    padding: variantPadding(mini, fullWidth),
+    padding: variantPadding({ mini, fullWidth }),
     borderRadius: themeConfig.button.sizes[mode].borderRadius,
     marketingBorderRadius: themeConfig.button.sizes[mode].marketingBorderRadius,
   };
 };
 
-export const getThemeObject = (mode: 'dark' | 'light', theme: Theme) => {
+export const getThemeObject = ({ mode, theme }: { mode: 'dark' | 'light'; theme: Theme }) => {
   const styleProps = theme.config.button;
 
   const normal = {

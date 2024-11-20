@@ -23,20 +23,19 @@ export const Content = styled.div<{ $hasChildren: boolean }>`
     fill: currentColor;
   }
 `;
-
 const BaseButton = css<StyledButtonProps>`
   font-size: ${({ theme, $mini, $fullWidth }) =>
-    getCommonStyles(theme, $mini, $fullWidth).fontSize};
+    getCommonStyles({ theme, mini: $mini, fullWidth: $fullWidth }).fontSize};
   font-weight: ${({ theme, $mini, $fullWidth }) =>
-    getCommonStyles(theme, $mini, $fullWidth).fontWeight};
+    getCommonStyles({ theme, mini: $mini, fullWidth: $fullWidth }).fontWeight};
   font-family: ${({ theme }) => theme.typography.bodyFont};
   padding: ${({ theme, $mini, $fullWidth }) =>
-    getCommonStyles(theme, $mini, $fullWidth).padding};
+    getCommonStyles({ theme, mini: $mini, fullWidth: $fullWidth }).padding};
   width: ${({ theme, $mini, $fullWidth }) =>
-    getCommonStyles(theme, $mini, $fullWidth).width};
+    getCommonStyles({ theme, mini: $mini, fullWidth: $fullWidth }).width};
   min-height: 2.625rem;
   border-radius: ${({ theme, $mini, $fullWidth }) =>
-    getCommonStyles(theme, $mini, $fullWidth).borderRadius};
+    getCommonStyles({ theme, mini: $mini, fullWidth: $fullWidth }).borderRadius};
   border: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -46,105 +45,97 @@ export const StyledButton = styled.button<StyledButtonProps>`
   ${BaseButton}
   && {
     background-color: ${({ theme, $mode }) => {
-      const config = getThemeObject($mode, theme);
+      const config = getThemeObject({ mode: $mode, theme });
       return config.normal.base.backgroundColor;
     }};
   }
-  color: ${({ theme, $mode }) =>
-    getThemeObject($mode, theme).normal.base.textColor};
+  color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).normal.base.textColor};
 
   &.loading {
-    color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).loading.base.textColor};
+    color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).loading.base.textColor};
     background-color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).loading.base.backgroundColor};
+      getThemeObject({ mode: $mode, theme }).loading.base.backgroundColor};
     cursor: wait;
   }
 
   &:active {
     background-color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).active.base.backgroundColor};
-    color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).active.base.textColor};
+      getThemeObject({ mode: $mode, theme }).active.base.backgroundColor};
+    color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).active.base.textColor};
   }
 
   &:hover {
     background-color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).hover.base.backgroundColor};
-    color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).hover.base.textColor};
+      getThemeObject({ mode: $mode, theme }).hover.base.backgroundColor};
+    color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).hover.base.textColor};
   }
 
   &:disabled {
     background-color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).disabled.base.backgroundColor};
-    color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).disabled.base.textColor};
+      getThemeObject({ mode: $mode, theme }).disabled.base.backgroundColor};
+    color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).disabled.base.textColor};
     cursor: not-allowed;
   }
 
   &.outlined {
     background-color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).normal.outlined.backgroundColor};
+      getThemeObject({ mode: $mode, theme }).normal.outlined.backgroundColor};
     color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).normal.outlined.textColor};
+      getThemeObject({ mode: $mode, theme }).normal.outlined.textColor};
 
-    border: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).normal.outlined.border};
+    border: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).normal.outlined.border};
 
     &.loading {
       color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).loading.outlined.textColor};
+        getThemeObject({ mode: $mode, theme }).loading.outlined.textColor};
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).loading.outlined.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).loading.outlined.backgroundColor};
       border-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).loading.outlined.borderColor};
+        getThemeObject({ mode: $mode, theme }).loading.outlined.borderColor};
     }
 
     &:active {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).active.outlined.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).active.outlined.backgroundColor};
       color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).active.outlined.textColor};
+        getThemeObject({ mode: $mode, theme }).active.outlined.textColor};
       border-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).active.outlined.borderColor};
+        getThemeObject({ mode: $mode, theme }).active.outlined.borderColor};
     }
 
     &:hover {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).hover.outlined.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).hover.outlined.backgroundColor};
       color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).hover.outlined.textColor};
+        getThemeObject({ mode: $mode, theme }).hover.outlined.textColor};
       border-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).hover.outlined.borderColor};
+        getThemeObject({ mode: $mode, theme }).hover.outlined.borderColor};
     }
 
     &:disabled {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).disabled.outlined.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).disabled.outlined.backgroundColor};
       color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).disabled.outlined.textColor};
+        getThemeObject({ mode: $mode, theme }).disabled.outlined.textColor};
       border-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).disabled.outlined.borderColor};
+        getThemeObject({ mode: $mode, theme }).disabled.outlined.borderColor};
       cursor: not-allowed;
     }
   }
 
   &.link {
     background-color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).normal.link.backgroundColor};
-    color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).normal.link.textColor};
+      getThemeObject({ mode: $mode, theme }).normal.link.backgroundColor};
+    color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).normal.link.textColor};
     font-weight: 400;
     padding: 0;
     min-height: auto;
     height: auto;
 
     &.loading {
-      color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).loading.link.textColor};
+      color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).loading.link.textColor};
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).loading.link.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).loading.link.backgroundColor};
 
       &:hover {
         text-decoration: none;
@@ -153,24 +144,22 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
     &:active {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).active.link.backgroundColor};
-      color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).active.link.textColor};
+        getThemeObject({ mode: $mode, theme }).active.link.backgroundColor};
+      color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).active.link.textColor};
     }
 
     &:hover {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).hover.link.backgroundColor};
-      color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).hover.link.textColor};
+        getThemeObject({ mode: $mode, theme }).hover.link.backgroundColor};
+      color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).hover.link.textColor};
       text-decoration: underline;
     }
 
     &:disabled {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).disabled.link.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).disabled.link.backgroundColor};
       color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).disabled.link.textColor};
+        getThemeObject({ mode: $mode, theme }).disabled.link.textColor};
 
       &:hover {
         text-decoration: none;
@@ -180,15 +169,13 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
   &.text {
     background-color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).normal.text.backgroundColor};
-    color: ${({ theme, $mode }) =>
-      getThemeObject($mode, theme).normal.text.textColor};
+      getThemeObject({ mode: $mode, theme }).normal.text.backgroundColor};
+    color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).normal.text.textColor};
 
     &.loading {
-      color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).loading.text.textColor};
+      color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).loading.text.textColor};
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).loading.text.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).loading.text.backgroundColor};
 
       &:hover {
         text-decoration: none;
@@ -197,23 +184,21 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
     &:active {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).active.text.backgroundColor};
-      color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).active.text.textColor};
+        getThemeObject({ mode: $mode, theme }).active.text.backgroundColor};
+      color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).active.text.textColor};
     }
 
     &:hover {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).hover.text.backgroundColor};
-      color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).hover.text.textColor};
+        getThemeObject({ mode: $mode, theme }).hover.text.backgroundColor};
+      color: ${({ theme, $mode }) => getThemeObject({ mode: $mode, theme }).hover.text.textColor};
     }
 
     &:disabled {
       background-color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).disabled.text.backgroundColor};
+        getThemeObject({ mode: $mode, theme }).disabled.text.backgroundColor};
       color: ${({ theme, $mode }) =>
-        getThemeObject($mode, theme).disabled.text.textColor};
+        getThemeObject({ mode: $mode, theme }).disabled.text.textColor};
 
       &:hover {
         text-decoration: none;
@@ -223,6 +208,6 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
   &.marketing {
     border-radius: ${({ theme, $mini, $fullWidth }) =>
-      getCommonStyles(theme, $mini, $fullWidth).marketingBorderRadius};
+      getCommonStyles({ theme, mini: $mini, fullWidth: $fullWidth }).marketingBorderRadius};
   }
 `;

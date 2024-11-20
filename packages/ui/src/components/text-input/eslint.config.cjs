@@ -4,6 +4,6 @@ const eslintConfigReact = require('@nayya-com/eslint-config/react');
 module.exports = [
   ...eslintConfigReact,
   {
-    ignores: ['eslint.config.cjs'],
+    ignores: ['eslint.config.cjs', 'lib/**'],
   },
 ];

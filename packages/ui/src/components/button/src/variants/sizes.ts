@@ -1,4 +1,4 @@
-export const variantPadding = (mini: boolean, fullWidth: boolean) => {
+export const variantPadding = ({ mini, fullWidth }: { mini: boolean; fullWidth: boolean }) => {
   if (mini) {
     return '0 1.125rem';
   }

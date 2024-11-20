@@ -104,6 +104,7 @@ const TextInput = forwardRef(
               ref={ref}
               id={id}
               type={type}
+              name={name}
               placeholder={placeholder}
               data-analytics-id={id}
               data-testid={id}
