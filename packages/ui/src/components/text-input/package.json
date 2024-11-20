@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@nayya-com/typography": "0.0.6",
-    "@nayya-com/wardrobe": "0.0.7",
+    "@nayya-com/wardrobe": "workspace:*",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"
