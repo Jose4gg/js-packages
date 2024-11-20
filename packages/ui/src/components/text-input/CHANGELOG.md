@@ -1,5 +1,13 @@
 # text-input
 
+## 0.0.4
+
+### Patch Changes
+
+- c61af84: bump
+  - @nayya-com/typography@0.0.7
+  - @nayya-com/wardrobe@0.0.8
+
 ## 0.0.3
 
 ### Patch Changes
