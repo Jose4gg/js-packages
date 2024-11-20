@@ -77,4 +77,6 @@ const Typography = ({
   return <ThemeProvider theme={rootWebUiTheme}>{Element}</ThemeProvider>;
 };
 
+export type { TypographyProps };
+
 export default Typography;

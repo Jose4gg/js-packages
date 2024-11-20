@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import Typography from '@nayya-com/typography';
+import Typography, { TypographyProps } from '@nayya-com/typography';
 
 import {
   containedInputStyles,
@@ -123,7 +123,7 @@ export const Label = styled.label`
   }}
 `;
 
-export const HelperText = styled(Typography)`
+export const HelperText = styled(Typography)<TypographyProps>`
   margin: 0.375rem 0 0 0.75rem;
 
   && {
