@@ -1,5 +1,11 @@
 # text-input
 
+## 0.0.3
+
+### Patch Changes
+
+- bf1124c: bump
+
 ## 0.0.2
 
 ### Patch Changes
