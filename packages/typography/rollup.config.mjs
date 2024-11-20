@@ -27,7 +27,6 @@ export default [
       commonjs(),
       typescript({
         tsconfig: './tsconfig.json',
-        useTsconfigDeclarationDir: true,
       }),
     ],
     external: ['styled-components', 'react', 'react/jsx-runtime'],

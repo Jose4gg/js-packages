@@ -9,14 +9,13 @@ const eslintPluginOnlyWarn = require('eslint-plugin-only-warn');
 const eslintPluginPrettier = require('eslint-plugin-prettier');
 const eslintPluginCustom = require('@nayya-com/eslint-plugin-custom');
 
-const project = resolve(process.cwd(), 'tsconfig.json');
-
 /** @type {import("@typescript-eslint/utils").TSESLint.FlatConfig.Config[]} */
 const baseConfig = [
   eslintJs.configs.recommended,
   ...typescriptEslint.configs.recommended,
   eslintConfigPrettier,
   {
+    files: ['**/*.ts', '**/*.tsx'],
     plugins: {
       '@typescript-eslint': typescriptEslintPlugin,
       import: eslintPluginImport,
@@ -28,14 +27,13 @@ const baseConfig = [
     languageOptions: {
       parser: typescriptEslintParser,
       parserOptions: {
-        files: ['**/*.ts', '**/*.tsx'],
-        project,
+        project: true,
       },
     },
     settings: {
       'import/resolver': {
         typescript: {
-          project,
+          project: true,
         },
       },
     },

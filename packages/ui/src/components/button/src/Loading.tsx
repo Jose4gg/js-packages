@@ -7,12 +7,7 @@ export interface FillIconProps {
   ariaAttributes?: AriaAttributes;
 }
 
-const Loading = ({
-  size = 14,
-  fillColor,
-  ariaAttributes,
-  ...rest
-}: FillIconProps) => {
+const Loading = ({ size = 14, fillColor, ariaAttributes, ...rest }: FillIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

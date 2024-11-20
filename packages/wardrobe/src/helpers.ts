@@ -8,22 +8,15 @@ const themeMap: Record<ThemeName, Theme> = {
 } as const;
 
 const getRootWebUiTheme = (): Theme => {
-  const legacyRootClass = document
-    .querySelector('#root')
-    ?.getAttribute('class');
+  const legacyRootClass = document.querySelector('#root')?.getAttribute('class');
 
-  const rootWebUIThemeClass = document
-    .querySelector('.themeRoot')
-    ?.getAttribute('class');
-  const rootWebUiThemeName =
-    rootWebUIThemeClass?.split(' ')[1] || ThemeName.NAYYA;
+  const rootWebUIThemeClass = document.querySelector('.themeRoot')?.getAttribute('class');
+  const rootWebUiThemeName = rootWebUIThemeClass?.split(' ')[1] || ThemeName.NAYYA;
 
   if (legacyRootClass === ThemeName.ADP) {
     return themeMap[legacyRootClass];
   }
-  const theme = themeMap[rootWebUiThemeName?.toLowerCase() as ThemeName] as
-    | Theme
-    | undefined;
+  const theme = themeMap[rootWebUiThemeName?.toLowerCase() as ThemeName] as Theme | undefined;
 
   return theme || nayyaTheme;
 };

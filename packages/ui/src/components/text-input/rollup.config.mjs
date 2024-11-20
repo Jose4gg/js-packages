@@ -1,6 +1,6 @@
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
-import dts from 'rollup-plugin-dts';
+import commonjs from '@rollup/plugin-commonjs';
 
 export default [
   {
@@ -10,27 +10,27 @@ export default [
         file: 'lib/index.mjs',
         format: 'esm',
         sourcemap: true,
+        exports: 'named',
+        globals: {},
       },
       {
         file: 'lib/index.js',
         format: 'cjs',
         sourcemap: true,
+        exports: 'named',
+        globals: {},
       },
     ],
     plugins: [
-      resolve(),
+      resolve({
+        preferBuiltins: true,
+      }),
+      commonjs(),
       typescript({
         tsconfig: './tsconfig.json',
+        useTsconfigDeclarationDir: true,
       }),
     ],
-    external: ['styled-components'],
-  },
-  {
-    input: 'src/index.ts',
-    output: {
-      file: 'lib/index.d.ts',
-      format: 'es',
-    },
-    plugins: [dts()],
+    external: ['styled-components', 'react', 'react/jsx-runtime'],
   },
 ];
