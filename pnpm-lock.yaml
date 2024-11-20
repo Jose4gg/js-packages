@@ -293,7 +293,7 @@ importers:
   packages/ui/src/components/button:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.7
+        specifier: workspace:*
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -336,10 +336,10 @@ importers:
   packages/ui/src/components/text-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.6
+        specifier: 0.0.7
         version: link:../../../../typography
       '@nayya-com/wardrobe':
-        specifier: 0.0.7
+        specifier: workspace:*
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
