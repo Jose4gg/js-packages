@@ -1,5 +1,6 @@
 ---
+'@nayya-com/select-input': patch
 '@nayya-com/date-input': patch
 ---
 
-initial port
+Initial port of select-input and date-input
