@@ -1,5 +1,11 @@
 # text-input
 
+## 0.0.6
+
+### Patch Changes
+
+- 5b9ee51: use versioned typography package for text-input
+
 ## 0.0.5
 
 ### Patch Changes
