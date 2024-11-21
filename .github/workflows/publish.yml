@@ -64,8 +64,8 @@ jobs:
               # Extract the name field from package.json using grep and sed
               name=$(grep -o '"name": *"@nayya-com[^"]*"' "$package_json" | sed 's/"name": *"//; s/"//')
 
-              # Check if a name was found and add it to the array if it starts with "@nayya-com"
-              if [[ $name == @nayya-com* ]]; then
+              # Check if a name was found and add it to the array if it starts with "@nayya-com" and is not eslint-config-custom
+              if [[ $name == @nayya-com* ]] && [[ $name != "@nayya-com/eslint-config-custom" ]]; then
                 packages+=("$name")
               fi
             done
