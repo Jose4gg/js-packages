@@ -8,8 +8,8 @@
     "module": "ESNext",
     "allowJs": false,
     "target": "es5",
-    "rootDir": "./",
-    "baseUrl": "./",
+    "rootDir": "./src",
+    "baseUrl": ".",
     "jsx": "react-jsx"
   },
   "include": ["./**/*.ts", "./**/*.tsx", "index.d.ts"],
