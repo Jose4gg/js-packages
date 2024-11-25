@@ -23,14 +23,14 @@
   },
   "dependencies": {
     "@nayya-com/typography": "0.0.8",
-    "@nayya-com/wardrobe": "workspace:*",
+    "@nayya-com/wardrobe": "0.0.8",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@nayya-com/eslint-config": "workspace:*",
-    "@nayya-com/tsconfig": "workspace:*",
+    "@nayya-com/eslint-config": "0.0.20",
+    "@nayya-com/tsconfig": "0.1.8",
     "typescript": "5.5.4",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-commonjs": "^28.0.1",
