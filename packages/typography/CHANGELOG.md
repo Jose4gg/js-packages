@@ -1,5 +1,13 @@
 # @nayya-com/typography
 
+## 0.0.12
+
+### Patch Changes
+
+- 5f67f4a: patch
+- Updated dependencies [5f67f4a]
+  - @nayya-com/wardrobe@0.0.12
+
 ## 0.0.11
 
 ### Patch Changes
