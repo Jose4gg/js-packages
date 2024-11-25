@@ -1,8 +1,5 @@
 {
   "extends": "@nayya-com/tsconfig/react-library.json",
-  "compilerOptions": {
-    "baseUrl": "./"
-  },
   "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"],
   "exclude": ["node_modules", "lib"]
 }
