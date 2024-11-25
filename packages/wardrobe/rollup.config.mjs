@@ -1,5 +1,6 @@
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import dts from 'rollup-plugin-dts';
 
 export default [
@@ -18,7 +19,10 @@ export default [
       },
     ],
     plugins: [
-      resolve(),
+      resolve({
+        preferBuiltins: true,
+      }),
+      commonjs(),
       typescript({
         tsconfig: './tsconfig.json',
       }),
