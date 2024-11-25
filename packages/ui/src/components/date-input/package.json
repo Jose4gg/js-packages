@@ -22,15 +22,15 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {
-    "@nayya-com/text-input": "0.0.9",
-    "@nayya-com/wardrobe": "0.0.11",
+    "@nayya-com/text-input": "workspace:*",
+    "@nayya-com/wardrobe": "workspace:*",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@nayya-com/eslint-config": "0.0.23",
-    "@nayya-com/tsconfig": "0.1.11",
+    "@nayya-com/eslint-config": "workspace:*",
+    "@nayya-com/tsconfig": "workspace:*",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "rollup": "^3.26.0",
