@@ -1,5 +1,11 @@
 # @nayya/ui
 
+## 0.0.6
+
+### Patch Changes
+
+- 8b1d69d: patch
+
 ## 0.0.5
 
 ### Patch Changes

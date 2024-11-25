@@ -1,5 +1,11 @@
 # @nayya-com/eslint-config
 
+## 0.0.23
+
+### Patch Changes
+
+- 8b1d69d: patch
+
 ## 0.0.22
 
 ### Patch Changes

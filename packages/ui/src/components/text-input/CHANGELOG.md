@@ -1,5 +1,14 @@
 # text-input
 
+## 0.0.9
+
+### Patch Changes
+
+- 8b1d69d: patch
+- Updated dependencies [8b1d69d]
+  - @nayya-com/typography@0.0.11
+  - @nayya-com/wardrobe@0.0.11
+
 ## 0.0.8
 
 ### Patch Changes

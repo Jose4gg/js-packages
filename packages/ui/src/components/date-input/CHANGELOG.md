@@ -1,5 +1,14 @@
 # @nayya-com/date-input
 
+## 0.0.5
+
+### Patch Changes
+
+- 8b1d69d: patch
+- Updated dependencies [8b1d69d]
+  - @nayya-com/text-input@0.0.9
+  - @nayya-com/wardrobe@0.0.11
+
 ## 0.0.4
 
 ### Patch Changes
