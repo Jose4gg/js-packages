@@ -53,6 +53,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
+      - name: Build packages
+        run: pnpm build
+
       - name: Check package changes and changesets
         id: check-package-changes
         run: |
