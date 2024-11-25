@@ -1,5 +1,13 @@
 # @nayya-com/typography
 
+## 0.0.14
+
+### Patch Changes
+
+- 2db9424: bump
+- Updated dependencies [156a8cc]
+  - @nayya-com/wardrobe@0.0.14
+
 ## 0.0.13
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.14
+
+### Patch Changes
+
+- 156a8cc: patch
+
 ## 0.1.13
 
 ### Patch Changes

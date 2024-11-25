@@ -1,5 +1,15 @@
 # @nayya-com/select-input
 
+## 0.0.9
+
+### Patch Changes
+
+- 156a8cc: patch
+- Updated dependencies [156a8cc]
+- Updated dependencies [2db9424]
+  - @nayya-com/wardrobe@0.0.14
+  - @nayya-com/typography@0.0.14
+
 ## 0.0.8
 
 ### Patch Changes
