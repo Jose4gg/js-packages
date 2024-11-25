@@ -1,5 +1,11 @@
 # @nayya/ui
 
+## 0.0.8
+
+### Patch Changes
+
+- d01a097: patch
+
 ## 0.0.7
 
 ### Patch Changes
