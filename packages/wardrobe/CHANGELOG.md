@@ -1,5 +1,11 @@
 # @nayya-com/wardrobe
 
+## 0.0.10
+
+### Patch Changes
+
+- 2aa5f38: bump
+
 ## 0.0.9
 
 ### Patch Changes
