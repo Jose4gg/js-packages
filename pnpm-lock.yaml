@@ -201,7 +201,7 @@ importers:
   packages/typography:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.8
+        specifier: 0.0.9
         version: link:../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -214,10 +214,10 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.20
+        specifier: 0.0.21
         version: link:../eslint-config
       '@nayya-com/tsconfig':
-        specifier: 0.1.8
+        specifier: 0.1.9
         version: link:../tsconfig
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
@@ -254,10 +254,10 @@ importers:
         specifier: ^3.2.2
         version: 3.2.2(react@18.3.1)(storybook@8.4.5)
       '@nayya-com/eslint-config':
-        specifier: 0.0.20
+        specifier: 0.0.21
         version: link:../eslint-config
       '@nayya-com/tsconfig':
-        specifier: 0.1.8
+        specifier: 0.1.9
         version: link:../tsconfig
       '@storybook/addon-essentials':
         specifier: ^8.4.4
@@ -296,7 +296,7 @@ importers:
   packages/ui/src/components/button:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.8
+        specifier: 0.0.9
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -339,10 +339,10 @@ importers:
   packages/ui/src/components/date-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: 0.0.6
+        specifier: 0.0.7
         version: link:../text-input
       '@nayya-com/wardrobe':
-        specifier: 0.0.8
+        specifier: 0.0.9
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -355,10 +355,10 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.20
+        specifier: 0.0.21
         version: link:../../../../eslint-config
       '@nayya-com/tsconfig':
-        specifier: 0.1.8
+        specifier: 0.1.9
         version: link:../../../../tsconfig
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
@@ -382,10 +382,10 @@ importers:
   packages/ui/src/components/select-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
+        specifier: 0.0.9
         version: link:../../../../typography
       '@nayya-com/wardrobe':
-        specifier: 0.0.8
+        specifier: 0.0.9
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -401,10 +401,10 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.20
+        specifier: 0.0.21
         version: link:../../../../eslint-config
       '@nayya-com/tsconfig':
-        specifier: 0.1.8
+        specifier: 0.1.9
         version: link:../../../../tsconfig
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
@@ -428,10 +428,10 @@ importers:
   packages/ui/src/components/text-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
+        specifier: 0.0.9
         version: link:../../../../typography
       '@nayya-com/wardrobe':
-        specifier: 0.0.8
+        specifier: 0.0.9
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -444,10 +444,10 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.20
+        specifier: 0.0.21
         version: link:../../../../eslint-config
       '@nayya-com/tsconfig':
-        specifier: 0.1.8
+        specifier: 0.1.9
         version: link:../../../../tsconfig
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
@@ -493,10 +493,10 @@ importers:
         version: 5.5.4
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.20
+        specifier: 0.0.21
         version: link:../eslint-config
       '@nayya-com/tsconfig':
-        specifier: 0.1.8
+        specifier: 0.1.9
         version: link:../tsconfig
       '@rollup/plugin-node-resolve':
         specifier: ^15.1.0
