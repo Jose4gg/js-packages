@@ -1,5 +1,13 @@
 # @nayya-com/typography
 
+## 0.0.13
+
+### Patch Changes
+
+- d01a097: patch
+- Updated dependencies [d01a097]
+  - @nayya-com/wardrobe@0.0.13
+
 ## 0.0.12
 
 ### Patch Changes

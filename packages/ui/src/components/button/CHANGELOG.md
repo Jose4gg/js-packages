@@ -1,5 +1,13 @@
 # @nayya-com/button
 
+## 0.0.8
+
+### Patch Changes
+
+- d01a097: patch
+- Updated dependencies [d01a097]
+  - @nayya-com/wardrobe@0.0.13
+
 ## 0.0.7
 
 ### Patch Changes

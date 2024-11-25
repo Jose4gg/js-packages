@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/typography",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
