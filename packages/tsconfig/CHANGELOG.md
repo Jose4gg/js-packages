@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.15
+
+### Patch Changes
+
+- 45ca2b8: use versioned dependencies
+
 ## 0.1.14
 
 ### Patch Changes

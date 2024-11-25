@@ -1,5 +1,11 @@
 # @nayya-com/wardrobe
 
+## 0.0.15
+
+### Patch Changes
+
+- 45ca2b8: use versioned dependencies
+
 ## 0.0.14
 
 ### Patch Changes

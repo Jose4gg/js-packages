@@ -1,5 +1,14 @@
 # @nayya-com/select-input
 
+## 0.0.10
+
+### Patch Changes
+
+- 45ca2b8: use versioned dependencies
+- Updated dependencies [45ca2b8]
+  - @nayya-com/typography@0.0.15
+  - @nayya-com/wardrobe@0.0.15
+
 ## 0.0.9
 
 ### Patch Changes

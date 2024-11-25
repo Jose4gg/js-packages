@@ -1,5 +1,13 @@
 # @nayya-com/typography
 
+## 0.0.15
+
+### Patch Changes
+
+- 45ca2b8: use versioned dependencies
+- Updated dependencies [45ca2b8]
+  - @nayya-com/wardrobe@0.0.15
+
 ## 0.0.14
 
 ### Patch Changes

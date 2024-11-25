@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/typography",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -25,7 +25,7 @@
     "prepare": "pnpm build"
   },
   "dependencies": {
-    "@nayya-com/wardrobe": "0.0.13",
+    "@nayya-com/wardrobe": "0.0.15",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"
