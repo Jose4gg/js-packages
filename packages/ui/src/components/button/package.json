@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/button",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -22,7 +22,7 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {
-    "@nayya-com/wardrobe": "0.0.8",
+    "@nayya-com/wardrobe": "0.0.9",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

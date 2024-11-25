@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.9
+
+### Patch Changes
+
+- a36a470: add package versions to all inter-package dependencies
+
 ## 0.1.8
 
 ### Patch Changes

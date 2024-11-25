@@ -1,5 +1,13 @@
 # @nayya-com/button
 
+## 0.0.4
+
+### Patch Changes
+
+- a36a470: add package versions to all inter-package dependencies
+- Updated dependencies [a36a470]
+  - @nayya-com/wardrobe@0.0.9
+
 ## 0.0.3
 
 ### Patch Changes

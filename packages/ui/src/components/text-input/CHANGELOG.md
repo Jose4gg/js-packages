@@ -1,5 +1,14 @@
 # text-input
 
+## 0.0.7
+
+### Patch Changes
+
+- a36a470: add package versions to all inter-package dependencies
+- Updated dependencies [a36a470]
+  - @nayya-com/typography@0.0.9
+  - @nayya-com/wardrobe@0.0.9
+
 ## 0.0.6
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @nayya-com/eslint-config
 
+## 0.0.21
+
+### Patch Changes
+
+- a36a470: add package versions to all inter-package dependencies
+
 ## 0.0.20
 
 ### Patch Changes

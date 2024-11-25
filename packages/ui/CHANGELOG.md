@@ -1,5 +1,11 @@
 # @nayya/ui
 
+## 0.0.4
+
+### Patch Changes
+
+- a36a470: add package versions to all inter-package dependencies
+
 ## 0.0.3
 
 ### Patch Changes
