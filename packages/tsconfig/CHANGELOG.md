@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.12
+
+### Patch Changes
+
+- 5f67f4a: patch
+
 ## 0.1.11
 
 ### Patch Changes
