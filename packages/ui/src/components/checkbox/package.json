@@ -1,0 +1,41 @@
+{
+  "name": "@nayya-com/checkbox",
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "pnpm tsc --noEmit",
+    "publish-package": "pnpm publish",
+    "prepare": "pnpm build",
+    "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
+  },
+  "dependencies": {
+    "@nayya-com/typography": "0.0.8",
+    "@nayya-com/wardrobe": "workspace:*",
+    "classnames": "^2.5.1",
+    "react": "^18.2.0",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@nayya-com/eslint-config": "workspace:*",
+    "@nayya-com/tsconfig": "workspace:*",
+    "typescript": "5.5.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "rollup": "^3.26.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.35.0"
+}
+}
