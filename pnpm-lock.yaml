@@ -289,6 +289,9 @@ importers:
       '@storybook/test':
         specifier: ^8.4.4
         version: 8.4.5(storybook@8.4.5(prettier@3.3.3))
+      react-select-event:
+        specifier: ^5.5.1
+        version: 5.5.1
       storybook:
         specifier: ^8.4.4
         version: 8.4.5(prettier@3.3.3)
@@ -299,11 +302,11 @@ importers:
   packages/ui/src/components/accordion:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
-      '@nayya-com/wardrobe':
         specifier: workspace:*
-        version: link:../../../../wardrobe
+        version: link:../../../../typography
+      '@nayya-com/wardrobe':
+        specifier: ^0.0.*
+        version: 0.0.15(@babel/core@7.26.0)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -345,8 +348,8 @@ importers:
   packages/ui/src/components/autocomplete:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: workspace:*
         version: link:../../../../wardrobe
@@ -434,8 +437,8 @@ importers:
   packages/ui/src/components/checkbox:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: workspace:*
         version: link:../../../../wardrobe
@@ -477,10 +480,10 @@ importers:
   packages/ui/src/components/date-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: 0.0.13
+        specifier: ^0.0.13
         version: 0.0.13(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
       '@nayya-com/wardrobe':
-        specifier: 0.0.15
+        specifier: ^0.0.15
         version: 0.0.15(@babel/core@7.26.0)
       classnames:
         specifier: ^2.5.1
@@ -566,8 +569,8 @@ importers:
   packages/ui/src/components/number-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: ^0.0.6
-        version: 0.0.6(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
+        specifier: workspace:*
+        version: link:../text-input
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -609,8 +612,8 @@ importers:
   packages/ui/src/components/password-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: '*'
-        version: 0.0.13(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
+        specifier: workspace:*
+        version: link:../text-input
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -732,8 +735,8 @@ importers:
   packages/ui/src/components/radio-button:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: workspace:*
         version: link:../../../../wardrobe
@@ -781,8 +784,8 @@ importers:
   packages/ui/src/components/select-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.15
-        version: 0.0.15(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: 0.0.15
         version: 0.0.15(@babel/core@7.26.0)
@@ -904,8 +907,8 @@ importers:
   packages/ui/src/components/text-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.15
-        version: 0.0.15(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: 0.0.15
         version: 0.0.15(@babel/core@7.26.0)
@@ -2351,23 +2354,14 @@ packages:
   '@nayya-com/text-input@0.0.13':
     resolution: {integrity: sha512-krXAqWgho4Q3nluV/214s6VeWbtpj5UzB0P/XCLDdZmd0O6v1SQPwenMejUJUIk9RC1OyXgDt6CY3p1ax6AVeQ==, tarball: https://npm.pkg.github.com/download/@nayya-com/text-input/0.0.13/cb4649505a61f040809948041c854e0ea594cc1f}
 
-  '@nayya-com/text-input@0.0.6':
-    resolution: {integrity: sha512-TKJbS/TLvDxfQI9SbbRSmCPI/8GSA6sC++yCUoPyOgkYsCwiZRNrzWBQ+8u6GffdEkuOl17Ha7tRok9cq0/jSw==, tarball: https://npm.pkg.github.com/download/@nayya-com/text-input/0.0.6/ea5f95ca2d945b324bfff3a11c3ee7e151ea4c3e}
-
   '@nayya-com/tsconfig@0.1.15':
     resolution: {integrity: sha512-B/Ae6OeuFc6bajJZ2da1RtuccY/V/09WvsoHqssEwB4V8dL16bWX/dHO7kM/E1oIjiF86xvQtJt6yss7j+yf5w==, tarball: https://npm.pkg.github.com/download/@nayya-com/tsconfig/0.1.15/500ecdfe6099abbcaec7003876318355b8b2f4b8}
 
   '@nayya-com/typography@0.0.15':
     resolution: {integrity: sha512-Q+QYZite5h0ZKOGXprK5EFHKstimJW/1kyqoPt7Z/Q0Dg4E4I4MGpi6gvxALOI3sjetX/wd/5qVNWfl8e4CmFw==, tarball: https://npm.pkg.github.com/download/@nayya-com/typography/0.0.15/a329530a48f6b158331d90e3446150023c5d04cd}
 
-  '@nayya-com/typography@0.0.8':
-    resolution: {integrity: sha512-JgLNqYudl2Kv5ugtqqZCexJc1iqvslvDnpTrz+emGf8hIaxzXOMpIY+a+IOqFV0inRBIqdl7v/bp3dFA4koz7w==, tarball: https://npm.pkg.github.com/download/@nayya-com/typography/0.0.8/edf2f32e67c6c585b42e4fa5d9f47095ffbfa2aa}
-
   '@nayya-com/wardrobe@0.0.15':
     resolution: {integrity: sha512-XYCbiKPGHw55dLI9aTxRaEXDfyQUFqZhAMN2bWFrNnX1Pd0n2tHT/t9BgUsxeVfy88PRfO+KqxJnnRbKg9A4Rw==, tarball: https://npm.pkg.github.com/download/@nayya-com/wardrobe/0.0.15/22e47114b2a39bdd112042e93468f381f352ff53}
-
-  '@nayya-com/wardrobe@0.0.8':
-    resolution: {integrity: sha512-Fk0zEQ5Jy+W16ZzHHr1sj5jMUOQHqAxWVVWZaFx3OZWAKYD6NwQDbP+MOqLgndEQ+VKW+JUcPgJITsWILVmq9w==, tarball: https://npm.pkg.github.com/download/@nayya-com/wardrobe/0.0.8/f4913e99939359dc1d4fb8acf63d178b14a16f3b}
 
   '@ndelangen/get-tarball@3.0.9':
     resolution: {integrity: sha512-9JKTEik4vq+yGosHYhZ1tiH/3WpUS0Nh0kej4Agndhox8pAdWhEx5knFVRcb/ya9knCRCs1rPxNrSXTDdfVqpA==}
@@ -6492,6 +6486,9 @@ packages:
     peerDependencies:
       react: '>=16.8'
 
+  react-select-event@5.5.1:
+    resolution: {integrity: sha512-goAx28y0+iYrbqZA2FeRTreHHs/ZtSuKxtA+J5jpKT5RHPCbVZJ4MqACfPnWyFXsEec+3dP5bCrNTxIX8oYe9A==}
+
   react-select@5.8.3:
     resolution: {integrity: sha512-lVswnIq8/iTj1db7XCG74M/3fbGB6ZaluCzvwPGT5ZOjCdL/k0CLWhEK0vCBLuU5bHTEf6Gj8jtSvi+3v+tO1w==}
     peerDependencies:
@@ -9157,17 +9154,6 @@ snapshots:
       - '@babel/core'
       - react-dom
 
-  '@nayya-com/text-input@0.0.6(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))':
-    dependencies:
-      '@nayya-com/typography': 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))
-      '@nayya-com/wardrobe': 0.0.8(@babel/core@7.26.0)
-      classnames: 2.5.1
-      react: 18.3.1
-      styled-components: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - react-dom
-
   '@nayya-com/tsconfig@0.1.15': {}
 
   '@nayya-com/typography@0.0.15(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))':
@@ -9180,29 +9166,7 @@ snapshots:
       - '@babel/core'
       - react-dom
 
-  '@nayya-com/typography@0.0.8(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))':
-    dependencies:
-      '@nayya-com/wardrobe': 0.0.8(@babel/core@7.26.0)
-      classnames: 2.5.1
-      react: 18.3.1
-      styled-components: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - react-dom
-
   '@nayya-com/wardrobe@0.0.15(@babel/core@7.26.0)':
-    dependencies:
-      lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-is: 18.3.1
-      react-router-dom: 6.28.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      styled-components: 5.3.9(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)
-      typescript: 5.5.4
-    transitivePeerDependencies:
-      - '@babel/core'
-
-  '@nayya-com/wardrobe@0.0.8(@babel/core@7.26.0)':
     dependencies:
       lodash: 4.17.21
       react: 18.3.1
@@ -14322,6 +14286,10 @@ snapshots:
     dependencies:
       '@remix-run/router': 1.21.0
       react: 18.3.1
+
+  react-select-event@5.5.1:
+    dependencies:
+      '@testing-library/dom': 10.4.0
 
   react-select@5.8.3(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

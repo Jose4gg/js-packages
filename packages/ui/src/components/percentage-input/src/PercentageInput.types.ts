@@ -1,4 +1,4 @@
-import { NumberFormatValues, NumericFormatProps } from 'react-number-format';
+import type { NumberFormatValues, NumericFormatProps } from 'react-number-format';
 import { TextInputProps } from '@nayya-com/text-input/lib/types';
 
 export interface PercentageInputProps

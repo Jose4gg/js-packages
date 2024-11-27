@@ -19,12 +19,15 @@ export default defineConfig({
         'src/**/*.types.ts',
       ],
     },
-    include: ['src/**/*.test.{js,jsx,ts,tsx}'],
+    include: ['src/**/*.test[s].{js,jsx,ts,tsx}'],
     exclude: ['node_modules', 'dist'],
   },
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
+      '@components': resolve(__dirname, './src/components'),
+      '@stories': resolve(__dirname, './src/stories'),
+      '@tests': resolve(__dirname, './src/tests'),
     },
   },
 });

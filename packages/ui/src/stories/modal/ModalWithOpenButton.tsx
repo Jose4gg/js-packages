@@ -1,5 +1,5 @@
-import Button from '../../components/button';
-import Modal from '../../components/modal';
+import Button from '@components/button';
+import Modal from '@components/modal';
 import { useState } from 'react';
 
 const ModalWithOpenButton = () => {

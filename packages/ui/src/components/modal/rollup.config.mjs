@@ -23,10 +23,16 @@ export default [
       }),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.json',
+        tsconfig: './tsconfig.rollup.json',
       }),
     ],
-    external: ['styled-components', 'focus-trap-react', 'react', 'react/jsx-runtime'],
+    external: [
+      'styled-components',
+      'focus-trap-react',
+      'react',
+      'react/jsx-runtime',
+      '@nayya-com/wardrobe',
+    ],
   },
   {
     input: 'src/index.ts',

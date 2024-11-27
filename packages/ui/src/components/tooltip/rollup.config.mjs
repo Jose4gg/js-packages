@@ -23,7 +23,7 @@ export default [
       }),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.json',
+        tsconfig: './tsconfig.rollup.json',
       }),
     ],
     external: ['styled-components', 'react', 'react/jsx-runtime'],
