@@ -295,6 +295,9 @@ importers:
       storybook:
         specifier: ^8.4.4
         version: 8.4.5(prettier@3.3.3)
+      tabbable:
+        specifier: ^5.3.3
+        version: 5.3.3
       typescript:
         specifier: 5.5.4
         version: 5.5.4

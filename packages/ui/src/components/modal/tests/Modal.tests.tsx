@@ -1,34 +1,11 @@
-vi.mock('tabbable', async () => {
-  const lib = await vi.importActual('tabbable');
-  return {
-    ...lib,
-    tabbable: (node, options) => lib.tabbable(node, { ...options, displayCheck: 'none' }),
-    focusable: (node, options) => lib.focusable(node, { ...options, displayCheck: 'none' }),
-    isFocusable: (node, options) => lib.isFocusable(node, { ...options, displayCheck: 'none' }),
-    isTabbable: (node, options) => lib.isTabbable(node, { ...options, displayCheck: 'none' }),
-  };
-});
 import { composeStories } from '@storybook/react';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
-
+import { beforeEach, describe, expect, it } from 'vitest';
 
 import * as ModalStories from '@stories/modal/Modal.stories';
 import * as AdpModalStories from '@stories/modal/adp/Modal.stories';
 import * as UpwiseModalStories from '@stories/modal/upwise/Modal.stories';
 import { testStoryLengths } from '@tests/shared-test-cases';
-
-// const tabbable = {};
-// vi.hoisted(() => {
-//   const lib = vi.importActual('tabbable');
-//   Object.assign(tabbable, {
-//     ...lib,
-//     tabbable: (node, options) => lib.tabbable(node, { ...options, displayCheck: 'none' }),
-//     focusable: (node, options) => lib.focusable(node, { ...options, displayCheck: 'none' }),
-//     isFocusable: (node, options) => lib.isFocusable(node, { ...options, displayCheck: 'none' }),
-//     isTabbable: (node, options) => lib.isTabbable(node, { ...options, displayCheck: 'none' }),
-//   });
-// });
-// vi.mock('tabbable', () => tabbable);
 
 const { Small, WithOpenButton } = composeStories(ModalStories);
 
@@ -38,7 +15,7 @@ const upwiseStoriesObj = composeStories(UpwiseModalStories);
 
 testStoryLengths({ defaultStoriesObj, adpStoriesObj, upwiseStoriesObj });
 
-describe.skip('Modal component', () => {
+describe('Modal component', () => {
   describe('Opened modal', () => {
     beforeEach(() => {
       render(<Small />);

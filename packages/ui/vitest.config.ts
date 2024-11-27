@@ -8,7 +8,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: ['./vitest.setup.ts'],
+    setupFiles: [resolve(__dirname, './vitest.setup.ts')],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
@@ -19,7 +19,7 @@ export default defineConfig({
         'src/**/*.types.ts',
       ],
     },
-    include: ['src/**/*.test[s].{js,jsx,ts,tsx}'],
+    include: ['**/*.test[s].{js,jsx,ts,tsx}'],
     exclude: ['node_modules', 'dist'],
   },
   resolve: {
