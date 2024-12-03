@@ -27,7 +27,9 @@ export default [
       }),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.rollup.json',
+        tsconfigOverride: {
+          exclude: ['node_modules', 'lib', 'src/tests/**/*'],
+        },
       }),
     ],
     external: ['styled-components', 'react', 'react/jsx-runtime', '@nayya-com/text-input'],

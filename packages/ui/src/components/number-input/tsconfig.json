@@ -1,7 +1,7 @@
 {
   "extends": ["@nayya-com/tsconfig/react-library.json"],
   "include": ["src", "index.d.ts"],
-  "exclude": ["node_modules", "tests"],
+  "exclude": ["node_modules", "lib", "src/tests"],
   "compilerOptions": {
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,5 +16,5 @@
     "paths": {
       "@stories": ["../../stories"]
     }
-  },
+  }
 }

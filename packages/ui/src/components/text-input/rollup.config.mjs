@@ -15,7 +15,7 @@ export default [
         file: 'lib/index.js',
         format: 'cjs',
         sourcemap: true,
-        interop: "auto",
+        interop: 'auto',
       },
     ],
     plugins: [
@@ -24,7 +24,9 @@ export default [
       }),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.rollup.json',
+        tsconfigOverride: {
+          exclude: ['node_modules', 'lib', 'src/tests/**/*'],
+        },
       }),
     ],
     external: ['styled-components', 'react', 'react/jsx-runtime', '@nayya-com/typography'],

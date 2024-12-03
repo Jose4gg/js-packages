@@ -1,5 +1,5 @@
 {
   "extends": "@nayya-com/tsconfig/react-library.json",
   "include": ["./**/*.ts", "./**/*.tsx", "index.d.ts"],
-  "exclude": ["node_modules", "lib"]
+  "exclude": ["node_modules", "lib", "src/tests"]
 }

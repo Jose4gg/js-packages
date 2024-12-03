@@ -23,7 +23,9 @@ export default [
       }),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.rollup.json',
+        tsconfigOverride: {
+          exclude: ['node_modules', 'lib', 'src/tests/**/*'],
+        },
       }),
     ],
     external: [

@@ -8,7 +8,7 @@ afterEach(() => {
   cleanup();
 });
 
-// tabbable is build in CJS, vitest does not intercept require, so we have to hoist a manual require interception
+// tabbable is bundled in CJS, vitest does not intercept require, so we have to hoist a manual require interception
 // vitest also does not seem to traverse workspace node modules during setup
 // so tabbable is installed as a dev dep in the same level as vitest's config
 
