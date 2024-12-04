@@ -37,7 +37,9 @@
     "@storybook/react": "^8.4.4",
     "@storybook/react-vite": "^8.4.4",
     "@storybook/test": "^8.4.4",
+    "react-select-event": "^5.5.1",
     "storybook": "^8.4.4",
+    "tabbable": "^5.3.3",
     "typescript": "5.5.4"
   },
   "peerDependencies": {

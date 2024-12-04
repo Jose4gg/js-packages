@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
-
-import TextInput from '../../src/components/text-input/src/TextInput';
+import TextInput from '@components/text-input';
 
 const defaultArgs = {
   id: 'storybookDemo',

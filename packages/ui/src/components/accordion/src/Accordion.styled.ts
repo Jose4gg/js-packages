@@ -10,8 +10,7 @@ export const AccordionContent = styled.div`
   border: ${({ theme }) => getThemeObject(theme.id).border};
 
   &:last-child {
-    border-bottom: ${({ theme }) =>
-      getThemeObject(theme.id).lastItemBorderBottom};
+    border-bottom: ${({ theme }) => getThemeObject(theme.id).lastItemBorderBottom};
   }
 `;
 

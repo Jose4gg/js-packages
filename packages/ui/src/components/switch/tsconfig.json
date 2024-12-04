@@ -1,4 +1,7 @@
 {
+  "extends": ["@nayya-com/tsconfig/react-library.json"],
+  "include": ["src", "index.d.ts"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -9,8 +12,13 @@
     "skipLibCheck": true,
     "noEmit": true,
     "strict": true,
-    "jsx": "react-jsx"
-  },
-  "include": ["src", "index.d.ts"],
-  "exclude": ["node_modules"]
+    "jsx": "react-jsx",
+    "paths": {
+      "@stories/*": ["../../stories/*"],
+      "@tests/*": ["../../tests/*"],
+      "@components/*": ["../*"]
+    },
+    "baseUrl": ".",
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
+  }
 }

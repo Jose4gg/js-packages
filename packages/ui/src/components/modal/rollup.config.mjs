@@ -23,10 +23,18 @@ export default [
       }),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.json',
+        tsconfigOverride: {
+          exclude: ['node_modules', 'lib', 'src/tests/**/*'],
+        },
       }),
     ],
-    external: ['styled-components', 'focus-trap-react', 'react', 'react/jsx-runtime'],
+    external: [
+      'styled-components',
+      'focus-trap-react',
+      'react',
+      'react/jsx-runtime',
+      '@nayya-com/wardrobe',
+    ],
   },
   {
     input: 'src/index.ts',

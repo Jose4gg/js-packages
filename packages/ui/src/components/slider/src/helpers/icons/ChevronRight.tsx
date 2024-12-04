@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { FillIconProps } from './Icons.types';
 
 const ChevronRight = ({ size = 18, fillColor, ...rest }: FillIconProps) => {
