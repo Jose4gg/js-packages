@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import Button from '@components/button';
 
 import { storyConfigs } from './storyConfigs';

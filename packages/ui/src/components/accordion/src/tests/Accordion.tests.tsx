@@ -17,7 +17,7 @@ testStoryLengths({ defaultStoriesObj, adpStoriesObj, upwiseStoriesObj });
 
 const allStories = [<AllowMultipleOpens />, <Default />, <SingleItem />];
 
-window.scrollTo = vi.fn();
+window.scrollTo = vi.fn() as unknown as typeof window.scrollTo;
 
 describe('Accordion Render Tests', () => {
   allStories.forEach((story) => {

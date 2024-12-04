@@ -37,6 +37,8 @@
     "@storybook/react": "^8.4.4",
     "@storybook/react-vite": "^8.4.4",
     "@storybook/test": "^8.4.4",
+    "@testing-library/jest-dom": "^6.1.0",
+    "jsdom": "^24.0.0",
     "react-select-event": "^5.5.1",
     "storybook": "^8.4.4",
     "tabbable": "^5.3.3",
