@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
-
-import Button from '../../src/components/button/src/Button';
+import Button from '@components/button';
 
 type DefaultArgs = {
   id: string;

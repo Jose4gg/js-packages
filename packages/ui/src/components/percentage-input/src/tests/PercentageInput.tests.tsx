@@ -4,7 +4,6 @@ import * as PercentageInputStories from '@stories/percentage-input/PercentageInp
 import * as AdpPercentageInputStories from '@stories/percentage-input/adp/PercentageInput.stories';
 import * as UpwisePercentageInputStories from '@stories/percentage-input/upwise/PercentageInput.stories';
 import { testStoryLengths } from '@tests/shared-test-cases';
-import React from 'react';
 import { describe, expect, test } from 'vitest';
 
 const {

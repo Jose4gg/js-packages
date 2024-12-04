@@ -1,4 +1,5 @@
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
+
 import Autocomplete from '../../components/autocomplete';
 
 import { storyConfigs } from './storyConfigs';

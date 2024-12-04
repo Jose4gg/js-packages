@@ -4,7 +4,6 @@ import * as PasswordInputStories from '@stories/password-input/PasswordInput.sto
 import * as AdpPasswordInputStories from '@stories/password-input/adp/PasswordInput.stories';
 import * as UpwisePasswordInputStories from '@stories/password-input/upwise/PasswordInput.stories';
 import { testStoryLengths } from '@tests/shared-test-cases';
-import React from 'react';
 import { describe, expect, it } from 'vitest';
 
 const { Password, Disabled, Error, Warning, Loading, WithHelperText } =

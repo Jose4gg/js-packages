@@ -3,8 +3,6 @@ import { expect } from '@storybook/test';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import * as ButtonStories from '@stories/button/Button.stories';
-import * as AdpButtonStories from '@stories/button/adp/Button.stories';
-import * as UpwiseButtonStories from '@stories/button/upwise/Button.stories';
 import { vi } from 'vitest';
 import { describe } from 'vitest';
 import { act } from 'react';
@@ -12,18 +10,8 @@ import { Mock } from 'vitest';
 import { test } from 'vitest';
 import { afterEach } from 'vitest';
 
-const {
-  Default,
-  DefaultDark,
-  DefaultLoading,
-  DefaultMini,
-  DefaultFullWidth,
-  DefaultDisabled,
-} = composeStories(ButtonStories);
-
-const defaultStoriesObj = composeStories(ButtonStories);
-const adpStoriesObj = composeStories(AdpButtonStories);
-const upwiseStoriesObj = composeStories(UpwiseButtonStories);
+const { Default, DefaultDark, DefaultLoading, DefaultMini, DefaultFullWidth, DefaultDisabled } =
+  composeStories(ButtonStories);
 
 // I am starting to think we don't need tests for all themes necessarily. I am still thinking of how we want
 // to handle theming stuff. I am going to comment this out for now.
@@ -49,16 +37,11 @@ const expectMap = {
   dark: (element: HTMLElement) => expect(element).toHaveClass('dark'),
   notDark: (element: HTMLElement) => expect(element).not.toHaveClass('dark'),
   loading: (element: HTMLElement) => expect(element).toHaveClass('loading'),
-  notLoading: (element: HTMLElement) =>
-    expect(element).not.toHaveClass('notLoading'),
-  toHaveBeenCalled: (mockFunction: Mock) =>
-    expect(mockFunction).toHaveBeenCalledTimes(1),
-  toNotHaveBeenCalled: (mockFunction: Mock) =>
-    expect(mockFunction).not.toHaveBeenCalled(),
-  inTheDocument: (element: HTMLElement | null) =>
-    expect(element).toBeInTheDocument(),
-  notInTheDocument: (element: HTMLElement | null) =>
-    expect(element).not.toBeInTheDocument(),
+  notLoading: (element: HTMLElement) => expect(element).not.toHaveClass('notLoading'),
+  toHaveBeenCalled: (mockFunction: Mock) => expect(mockFunction).toHaveBeenCalledTimes(1),
+  toNotHaveBeenCalled: (mockFunction: Mock) => expect(mockFunction).not.toHaveBeenCalled(),
+  inTheDocument: (element: HTMLElement | null) => expect(element).toBeInTheDocument(),
+  notInTheDocument: (element: HTMLElement | null) => expect(element).not.toBeInTheDocument(),
 };
 
 describe('The Button renders', () => {
@@ -115,9 +98,7 @@ describe('The button class names', () => {
       render(story);
       const buttonElement = screen.getByTestId('storybookDemo');
       const expectFunction =
-        story.type.storyName === 'DefaultDark'
-          ? expectMap.dark
-          : expectMap.notDark;
+        story.type.storyName === 'DefaultDark' ? expectMap.dark : expectMap.notDark;
       expectFunction(buttonElement);
     });
 
@@ -127,9 +108,7 @@ describe('The button class names', () => {
       render(story);
       const buttonElement = screen.getByTestId('storybookDemo');
       const expectFunction =
-        story.type.storyName === 'Loading'
-          ? expectMap.loading
-          : expectMap.notLoading;
+        story.type.storyName === 'Loading' ? expectMap.loading : expectMap.notLoading;
       expectFunction(buttonElement);
     });
   });
@@ -143,9 +122,7 @@ describe('The button disabled state', () => {
       render(story);
       const buttonElement = screen.getByTestId('storybookDemo');
       const expectFunction =
-        story.type.storyName === 'DefaultDisabled'
-          ? expectMap.disabled
-          : expectMap.notDisabled;
+        story.type.storyName === 'DefaultDisabled' ? expectMap.disabled : expectMap.notDisabled;
       expectFunction(buttonElement);
     });
   });

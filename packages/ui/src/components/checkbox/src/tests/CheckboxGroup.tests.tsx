@@ -4,7 +4,6 @@ import * as CheckboxGroupStories from '@stories/checkbox/CheckboxGroup.stories';
 import * as AdpCheckboxGroupStories from '@stories/checkbox/adp/CheckboxGroup.stories';
 import * as UpwiseCheckboxGroupStories from '@stories/checkbox/upwise/CheckboxGroup.stories';
 import { testStoryLengths } from '@tests/shared-test-cases';
-import React from 'react';
 import { describe, expect, test } from 'vitest';
 
 const {

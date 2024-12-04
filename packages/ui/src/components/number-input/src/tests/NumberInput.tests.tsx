@@ -3,10 +3,10 @@ import { render, screen } from '@testing-library/react';
 import * as matchers from '@testing-library/jest-dom/matchers';
 import { describe, expect, test } from 'vitest';
 
-import * as NumberInputStories from '@/stories/number-input/NumberInput.stories';
-import * as AdpNumberInputStories from '@/stories/number-input/adp/NumberInput.stories';
-import * as UpwiseNumberInputStories from '@/stories/number-input/upwise/NumberInput.stories';
-import { testStoryLengths } from '@/tests/shared-test-cases';
+import * as NumberInputStories from '@stories/number-input/NumberInput.stories';
+import * as AdpNumberInputStories from '@stories/number-input/adp/NumberInput.stories';
+import * as UpwiseNumberInputStories from '@stories/number-input/upwise/NumberInput.stories';
+import { testStoryLengths } from '@tests/shared-test-cases';
 
 expect.extend(matchers);
 
