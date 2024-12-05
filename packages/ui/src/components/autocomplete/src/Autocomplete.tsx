@@ -56,9 +56,7 @@ const Autocomplete = forwardRef(
     return (
       <ThemeProvider theme={rootWebUiTheme}>
         <SelectWrapper data-testid={testId} className={selectClass}>
-          {rootWebUiTheme.id === adpTheme.id && (
-            <Label htmlFor={id}>{header}</Label>
-          )}
+          {rootWebUiTheme.id === adpTheme.id && <Label htmlFor={id}>{header}</Label>}
 
           <StyledAutocomplete
             {...props}
@@ -81,17 +79,11 @@ const Autocomplete = forwardRef(
           {loading && <LoadingIndicator className={selectClass} />}
 
           {showHandler && (
-            <RemoveButton onClick={inputActionHandler}>
-              {inputActionLabel}
-            </RemoveButton>
+            <RemoveButton onClick={inputActionHandler}>{inputActionLabel}</RemoveButton>
           )}
         </SelectWrapper>
         {helperText && (
-          <HelperText
-            className={helperTextClass}
-            variant="label3"
-            testId={`${id}InputHelperText`}
-          >
+          <HelperText className={helperTextClass} variant="label3" testId={`${id}InputHelperText`}>
             {helperText}
           </HelperText>
         )}

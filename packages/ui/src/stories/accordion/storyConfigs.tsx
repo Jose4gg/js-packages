@@ -11,9 +11,8 @@ const TEST_ITEMS: AccordionItem[] = [
       <div>
         <p>Here is the first panel of content.</p>
         <p>
-          You can render anything you&apos;d like in the panel content. You can
-          also specify if you want to enable support for more than one open
-          panel at a time.
+          You can render anything you&apos;d like in the panel content. You can also specify if you
+          want to enable support for more than one open panel at a time.
         </p>
       </div>
     ),
@@ -26,9 +25,8 @@ const TEST_ITEMS: AccordionItem[] = [
       <div style={{ paddingBottom: 20 }}>
         <p>And here is the contenet for the second panel.</p>
         <p>
-          You can render anything you&apos;d like in the panel content. You can
-          also specify if you want to enable support for more than one open
-          panel at a time.
+          You can render anything you&apos;d like in the panel content. You can also specify if you
+          want to enable support for more than one open panel at a time.
         </p>
 
         <p>This panel even features an image</p>

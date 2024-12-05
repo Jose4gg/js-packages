@@ -289,9 +289,15 @@ importers:
       '@storybook/test':
         specifier: ^8.4.4
         version: 8.4.5(storybook@8.4.5)
+      react-select-event:
+        specifier: ^5.5.1
+        version: 5.5.1
       storybook:
         specifier: ^8.4.4
         version: 8.4.5(prettier@3.3.3)
+      tabbable:
+        specifier: ^5.3.3
+        version: 5.3.3
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -299,10 +305,10 @@ importers:
   packages/ui/src/components/accordion:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1)
-      '@nayya-com/wardrobe':
         specifier: workspace:*
+        version: link:../../../../typography
+      '@nayya-com/wardrobe':
+        specifier: ^0.0.*
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -345,8 +351,8 @@ importers:
   packages/ui/src/components/autocomplete:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: workspace:*
         version: link:../../../../wardrobe
@@ -434,8 +440,8 @@ importers:
   packages/ui/src/components/checkbox:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: workspace:*
         version: link:../../../../wardrobe
@@ -477,10 +483,10 @@ importers:
   packages/ui/src/components/date-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: 0.0.13
+        specifier: ^0.0.13
         version: link:../text-input
       '@nayya-com/wardrobe':
-        specifier: 0.0.15
+        specifier: ^0.0.15
         version: link:../../../../wardrobe
       classnames:
         specifier: ^2.5.1
@@ -566,8 +572,8 @@ importers:
   packages/ui/src/components/number-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: ^0.0.6
-        version: 0.0.6(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../text-input
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -609,7 +615,7 @@ importers:
   packages/ui/src/components/password-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../text-input
       react:
         specifier: ^18.2.0
@@ -732,8 +738,8 @@ importers:
   packages/ui/src/components/radio-button:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.8
-        version: 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: workspace:*
         version: link:../../../../wardrobe
@@ -781,7 +787,7 @@ importers:
   packages/ui/src/components/select-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.15
+        specifier: workspace:*
         version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: 0.0.15
@@ -811,6 +817,9 @@ importers:
       '@rollup/plugin-node-resolve':
         specifier: ^15.1.0
         version: 15.3.0(rollup@3.29.5)
+      react-select-event:
+        specifier: ^5.5.1
+        version: 5.5.1
       rollup:
         specifier: ^3.26.0
         version: 3.29.5
@@ -904,7 +913,7 @@ importers:
   packages/ui/src/components/text-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: 0.0.15
+        specifier: workspace:*
         version: link:../../../../typography
       '@nayya-com/wardrobe':
         specifier: 0.0.15
@@ -3601,45 +3610,6 @@ packages:
       '@types/react': 18.3.12
       react: 18.3.1
     dev: true
-
-  /@nayya-com/text-input@0.0.6(@babel/core@7.26.0)(react-dom@18.3.1):
-    resolution: {integrity: sha512-TKJbS/TLvDxfQI9SbbRSmCPI/8GSA6sC++yCUoPyOgkYsCwiZRNrzWBQ+8u6GffdEkuOl17Ha7tRok9cq0/jSw==, tarball: https://npm.pkg.github.com/download/@nayya-com/text-input/0.0.6/ea5f95ca2d945b324bfff3a11c3ee7e151ea4c3e}
-    dependencies:
-      '@nayya-com/typography': 0.0.8(@babel/core@7.26.0)(react-dom@18.3.1)
-      '@nayya-com/wardrobe': 0.0.8(@babel/core@7.26.0)
-      classnames: 2.5.1
-      react: 18.3.1
-      styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - react-dom
-    dev: false
-
-  /@nayya-com/typography@0.0.8(@babel/core@7.26.0)(react-dom@18.3.1):
-    resolution: {integrity: sha512-JgLNqYudl2Kv5ugtqqZCexJc1iqvslvDnpTrz+emGf8hIaxzXOMpIY+a+IOqFV0inRBIqdl7v/bp3dFA4koz7w==, tarball: https://npm.pkg.github.com/download/@nayya-com/typography/0.0.8/edf2f32e67c6c585b42e4fa5d9f47095ffbfa2aa}
-    dependencies:
-      '@nayya-com/wardrobe': 0.0.8(@babel/core@7.26.0)
-      classnames: 2.5.1
-      react: 18.3.1
-      styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - react-dom
-    dev: false
-
-  /@nayya-com/wardrobe@0.0.8(@babel/core@7.26.0):
-    resolution: {integrity: sha512-Fk0zEQ5Jy+W16ZzHHr1sj5jMUOQHqAxWVVWZaFx3OZWAKYD6NwQDbP+MOqLgndEQ+VKW+JUcPgJITsWILVmq9w==, tarball: https://npm.pkg.github.com/download/@nayya-com/wardrobe/0.0.8/f4913e99939359dc1d4fb8acf63d178b14a16f3b}
-    dependencies:
-      lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-is: 18.3.1
-      react-router-dom: 6.28.0(react-dom@18.3.1)(react@18.3.1)
-      styled-components: 5.3.9(@babel/core@7.26.0)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)
-      typescript: 5.5.4
-    transitivePeerDependencies:
-      - '@babel/core'
-    dev: false
 
   /@ndelangen/get-tarball@3.0.9:
     resolution: {integrity: sha512-9JKTEik4vq+yGosHYhZ1tiH/3WpUS0Nh0kej4Agndhox8pAdWhEx5knFVRcb/ya9knCRCs1rPxNrSXTDdfVqpA==}
@@ -11823,6 +11793,12 @@ packages:
       react: 18.3.1
     dev: false
 
+  /react-select-event@5.5.1:
+    resolution: {integrity: sha512-goAx28y0+iYrbqZA2FeRTreHHs/ZtSuKxtA+J5jpKT5RHPCbVZJ4MqACfPnWyFXsEec+3dP5bCrNTxIX8oYe9A==}
+    dependencies:
+      '@testing-library/dom': 10.4.0
+    dev: true
+
   /react-select@5.8.3(@types/react@18.3.12)(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-lVswnIq8/iTj1db7XCG74M/3fbGB6ZaluCzvwPGT5ZOjCdL/k0CLWhEK0vCBLuU5bHTEf6Gj8jtSvi+3v+tO1w==}
     peerDependencies:
@@ -12846,7 +12822,6 @@ packages:
 
   /tabbable@5.3.3:
     resolution: {integrity: sha512-QD9qKY3StfbZqWOPLp0++pOrAVb/HbUi5xCc8cUo4XjP19808oaMiDzn0leBY5mCespIBM0CIZePzZjgzR83kA==}
-    dev: false
 
   /tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}

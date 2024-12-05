@@ -12,6 +12,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "prepare": "husky install",
     "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
     "create-changeset": "pnpm changeset",
     "publish-packages": "pnpm changeset publish"
   },

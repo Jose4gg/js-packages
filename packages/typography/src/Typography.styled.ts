@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components';
-
+import { styled, css } from 'styled-components';
 import { getThemeObject } from './variants';
 
 interface DefaultProps {
@@ -11,8 +10,8 @@ const SuperCss = css`
   ${({ theme }) => {
     const themeObject = getThemeObject(theme);
     return `
-       font-family: ${themeObject.headingFontFamily}; 
-       font-weight:  ${themeObject.superWeight}; 
+       font-family: ${themeObject.headingFontFamily};
+       font-weight:  ${themeObject.superWeight};
        color: ${themeObject.textColor}
        `;
   }};

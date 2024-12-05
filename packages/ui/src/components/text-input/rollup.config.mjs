@@ -15,6 +15,7 @@ export default [
         file: 'lib/index.js',
         format: 'cjs',
         sourcemap: true,
+        interop: 'auto',
       },
     ],
     plugins: [
@@ -23,10 +24,12 @@ export default [
       }),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.json',
+        tsconfigOverride: {
+          exclude: ['node_modules', 'lib', 'src/tests/**/*'],
+        },
       }),
     ],
-    external: ['styled-components', 'react', 'react/jsx-runtime'],
+    external: ['styled-components', 'react', 'react/jsx-runtime', '@nayya-com/typography'],
   },
   {
     input: 'src/index.ts',
