@@ -1,5 +1,11 @@
 # @nayya-com/eslint-plugin-custom
 
+## 0.0.15
+
+### Patch Changes
+
+- 46d037a: bump all packages
+
 ## 0.0.14
 
 ### Patch Changes

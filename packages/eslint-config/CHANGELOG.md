@@ -1,5 +1,16 @@
 # @nayya-com/eslint-config
 
+## 0.0.28
+
+### Patch Changes
+
+- 46d037a: bump all packages
+- 6a78c6e: Added percentage-input, password-input, autocomplete, number-input, radio-button, accordion, checkbox, tooltip, slider, switch, modal, pill
+  Add tests for above components
+  Update imports style for typography
+- Updated dependencies [46d037a]
+  - @nayya-com/eslint-plugin-custom@0.0.15
+
 ## 0.0.27
 
 ### Patch Changes

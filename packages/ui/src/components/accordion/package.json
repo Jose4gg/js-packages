@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/accordion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@nayya-com/typography": "workspace:*",
-    "@nayya-com/wardrobe": "^0.0.*",
+    "@nayya-com/wardrobe": "^0.0.16",
     "classnames": "^2.5.1",
     "framer-motion": "^11.1.7",
     "react": "^18.2.0",

@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/select-input",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@nayya-com/typography": "workspace:*",
-    "@nayya-com/wardrobe": "0.0.15",
+    "@nayya-com/wardrobe": "0.0.16",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-select": "^5.8.0",

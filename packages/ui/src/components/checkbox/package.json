@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/checkbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -37,5 +37,5 @@
     "rollup": "^3.26.0",
     "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-typescript2": "^0.35.0"
-}
+  }
 }

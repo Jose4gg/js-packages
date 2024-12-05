@@ -1,7 +1,7 @@
 {
   "name": "@nayya/ui",
   "private": true,
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "commonjs",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
@@ -25,8 +25,8 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
-    "@nayya-com/eslint-config": "0.0.27",
-    "@nayya-com/tsconfig": "0.1.15",
+    "@nayya-com/eslint-config": "0.0.28",
+    "@nayya-com/tsconfig": "0.1.16",
     "@storybook/addon-essentials": "^8.4.4",
     "@storybook/addon-interactions": "^8.4.4",
     "@storybook/addon-onboarding": "^8.4.4",

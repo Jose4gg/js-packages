@@ -1,5 +1,18 @@
 # @nayya-com/select-input
 
+## 0.0.11
+
+### Patch Changes
+
+- 46d037a: bump all packages
+- 6a78c6e: Added percentage-input, password-input, autocomplete, number-input, radio-button, accordion, checkbox, tooltip, slider, switch, modal, pill
+  Add tests for above components
+  Update imports style for typography
+- Updated dependencies [46d037a]
+- Updated dependencies [6a78c6e]
+  - @nayya-com/typography@0.0.16
+  - @nayya-com/wardrobe@0.0.16
+
 ## 0.0.10
 
 ### Patch Changes

@@ -1,0 +1,14 @@
+# @nayya-com/percentage-input
+
+## 0.0.2
+
+### Patch Changes
+
+- 46d037a: bump all packages
+- 6a78c6e: Added percentage-input, password-input, autocomplete, number-input, radio-button, accordion, checkbox, tooltip, slider, switch, modal, pill
+  Add tests for above components
+  Update imports style for typography
+- Updated dependencies [46d037a]
+- Updated dependencies [6a78c6e]
+  - @nayya-com/text-input@0.0.14
+  - @nayya-com/wardrobe@0.0.16
