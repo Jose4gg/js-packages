@@ -1,5 +1,5 @@
 import { Theme } from '@nayya-com/wardrobe';
-import { GroupBase, Props, SelectInstance } from 'react-select';
+import { Props, SelectInstance } from 'react-select';
 import 'styled-components';
 
 export type StyledAutocompleteProps = AutocompleteProps & {
@@ -10,12 +10,8 @@ declare module 'styled-components' {
   export interface DefaultTheme extends Theme {}
 }
 
-export interface AutocompleteProps<
-  Option = unknown,
-  IsMulti extends boolean = false,
-  Group extends GroupBase<Option> = GroupBase<Option>,
-> extends Props<Option, IsMulti, Group> {
-  searchFn: (inputValue: string) => Promise<Option[]>;
+export interface AutocompleteProps extends Props {
+  searchFn: (inputValue: string) => Promise<unknown[]>;
   error?: boolean;
   helperText?: string;
   testId?: string;
@@ -24,7 +20,7 @@ export interface AutocompleteProps<
   inputActionHandler?: () => void;
   Input?: () => void;
   header?: string;
-  ref?: React.Ref<SelectInstance<Option, IsMulti, Group>>;
+  ref?: React.Ref<SelectInstance>;
 }
 
 export type { SelectInstance as AutocompleteInstance };

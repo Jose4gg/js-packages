@@ -1,5 +1,6 @@
 import { StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
+
 import Autocomplete from '@components/autocomplete';
 
 const fruits = [

@@ -817,6 +817,9 @@ importers:
       '@rollup/plugin-node-resolve':
         specifier: ^15.1.0
         version: 15.3.0(rollup@3.29.5)
+      react-select-event:
+        specifier: ^5.5.1
+        version: 5.5.1
       rollup:
         specifier: ^3.26.0
         version: 3.29.5

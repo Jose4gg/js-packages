@@ -35,7 +35,9 @@ const PlaceholderAnimation = css`
   .nayya-autocomplete__placeholder {
     display: ${({ theme }) => (theme.id === 'adp' ? 'none' : 'block')};
     position: absolute;
-    transition: top 0.1s, font-size 0.1s;
+    transition:
+      top 0.1s,
+      font-size 0.1s;
     font-size: 0.75rem;
     top: 0.5rem;
   }
@@ -66,8 +68,7 @@ const MenuOptions = css`
   .nayya-autocomplete__option--is-focused {
     &:focus,
     &:hover {
-      background-color: ${({ theme }) =>
-        getThemeObject(theme).focus.listItemFocusBackgroundColor};
+      background-color: ${({ theme }) => getThemeObject(theme).focus.listItemFocusBackgroundColor};
     }
   }
 
@@ -99,8 +100,7 @@ const Error = css`
       &:hover,
       &:focus {
         border: ${({ theme }) => getThemeObject(theme).focus.border};
-        box-shadow: ${({ theme }) =>
-          `0 0 0 0.063rem ${getThemeObject(theme).focus.border}`};
+        box-shadow: ${({ theme }) => `0 0 0 0.063rem ${getThemeObject(theme).focus.border}`};
 
         .icon {
           fill: ${({ theme }) => getThemeObject(theme).focus.iconColor};
@@ -124,8 +124,7 @@ const Warning = css`
       &:hover,
       &:focus {
         border: ${({ theme }) => getThemeObject(theme).focus.border};
-        box-shadow: ${({ theme }) =>
-          `0 0 0 0.063rem ${getThemeObject(theme).focus.border}`};
+        box-shadow: ${({ theme }) => `0 0 0 0.063rem ${getThemeObject(theme).focus.border}`};
 
         .icon {
           fill: ${({ theme }) => getThemeObject(theme).focus.iconColor};
@@ -141,8 +140,7 @@ const Disabled = css`
     .nayya-autocomplete__control {
       cursor: not-allowed;
       border: ${({ theme }) => getThemeObject(theme).disabled.border};
-      background-color: ${({ theme }) =>
-        getThemeObject(theme).disabled.backgroundColor};
+      background-color: ${({ theme }) => getThemeObject(theme).disabled.backgroundColor};
 
       .icon {
         fill: ${({ theme }) => getThemeObject(theme).disabled.iconColor};
@@ -178,8 +176,7 @@ export const StyledAutocomplete = styled(Select)<StyledAutocompleteProps>`
     &:focus,
     &:hover {
       border: ${({ theme }) => getThemeObject(theme).focus.border};
-      box-shadow: ${({ theme }) =>
-        `0 0 0 0.063rem ${getThemeObject(theme).focus.border}`};
+      box-shadow: ${({ theme }) => `0 0 0 0.063rem ${getThemeObject(theme).focus.border}`};
 
       .icon {
         fill: ${({ theme }) => getThemeObject(theme).focus.iconColor};
@@ -216,8 +213,7 @@ export const StyledAutocomplete = styled(Select)<StyledAutocompleteProps>`
   }
 
   .nayya-autocomplete__multi-value {
-    margin: ${({ theme }) => getThemeObject(theme).normal.multiSelectMarginTop}
-      0 0 0;
+    margin: ${({ theme }) => getThemeObject(theme).normal.multiSelectMarginTop} 0 0 0;
   }
 
   .nayya-autocomplete__indicator {
