@@ -28,7 +28,7 @@ export default [
         },
       }),
     ],
-    external: ['styled-components', 'react', 'react/jsx-runtime', '@nayya-com/text-input'],
+    external: ['styled-components', 'react', 'react/jsx-runtime'],
   },
   {
     input: 'src/index.ts',
