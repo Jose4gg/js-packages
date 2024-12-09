@@ -213,27 +213,48 @@ importers:
         specifier: ^6.1.8
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
+      '@babel/core':
+        specifier: ^7.22.5
+        version: 7.26.0
+      '@babel/plugin-transform-runtime':
+        specifier: ^7.25.9
+        version: 7.25.9(@babel/core@7.26.0)
+      '@babel/preset-env':
+        specifier: ^7.22.5
+        version: 7.26.0(@babel/core@7.26.0)
+      '@babel/preset-react':
+        specifier: ^7.18.6
+        version: 7.25.9(@babel/core@7.26.0)
       '@nayya-com/eslint-config':
         specifier: 0.0.28
         version: link:../eslint-config
       '@nayya-com/tsconfig':
         specifier: 0.1.16
         version: link:../tsconfig
+      '@rollup/plugin-babel':
+        specifier: ^6.0.4
+        version: 6.0.4(@babel/core@7.26.0)(rollup@3.29.5)
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
       '@rollup/plugin-node-resolve':
-        specifier: ^15.1.0
+        specifier: ^15.3.0
         version: 15.3.0(rollup@3.29.5)
       '@types/styled-components':
         specifier: ^5.1.34
         version: 5.1.34
+      babel-plugin-styled-components:
+        specifier: ^2.0.7
+        version: 2.1.4(@babel/core@7.26.0)(styled-components@6.1.13)
       rollup:
-        specifier: ^3.26.0
+        specifier: ^3.29.5
         version: 3.29.5
       rollup-plugin-dts:
         specifier: ^5.3.0
         version: 5.3.1(rollup@3.29.5)(typescript@5.5.4)
+      rollup-plugin-peer-deps-external:
+        specifier: ^2.2.4
+        version: 2.2.4(rollup@3.29.5)
       rollup-plugin-typescript2:
         specifier: ^0.35.0
         version: 0.35.0(rollup@3.29.5)(typescript@5.5.4)
@@ -1992,6 +2013,23 @@ packages:
     dependencies:
       '@babel/core': 7.26.0
       '@babel/helper-plugin-utils': 7.25.9
+    dev: true
+
+  /@babel/plugin-transform-runtime@7.25.9(@babel/core@7.26.0):
+    resolution: {integrity: sha512-nZp7GlEl+yULJrClz0SwHPqir3lc0zsPrDHQUcxGspSL7AKrexNSEfTbfqnDNJUO13bgKyfuOLMF8Xqtu8j3YQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.26.0
+      '@babel/helper-module-imports': 7.25.9(supports-color@5.5.0)
+      '@babel/helper-plugin-utils': 7.25.9
+      babel-plugin-polyfill-corejs2: 0.4.12(@babel/core@7.26.0)
+      babel-plugin-polyfill-corejs3: 0.10.6(@babel/core@7.26.0)
+      babel-plugin-polyfill-regenerator: 0.6.3(@babel/core@7.26.0)
+      semver: 6.3.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@babel/plugin-transform-shorthand-properties@7.25.9(@babel/core@7.26.0):
@@ -4410,6 +4448,27 @@ packages:
     resolution: {integrity: sha512-xfSkCAchbdG5PnbrKqFWwia4Bi61nH+wm8wLEqfHDyp7Y3dZzgqS2itV8i4gAq9pC2HsTpwyBC6Ds8VHZ96JlA==}
     engines: {node: '>=14.0.0'}
     dev: false
+
+  /@rollup/plugin-babel@6.0.4(@babel/core@7.26.0)(rollup@3.29.5):
+    resolution: {integrity: sha512-YF7Y52kFdFT/xVSuVdjkV5ZdX/3YtmX0QulG+x0taQOtJdHYzVU61aSSkAgVJ7NOv6qPkIYiJSgSWWN/DM5sGw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+      '@types/babel__core': ^7.1.9
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      '@types/babel__core':
+        optional: true
+      rollup:
+        optional: true
+    dependencies:
+      '@babel/core': 7.26.0
+      '@babel/helper-module-imports': 7.25.9(supports-color@5.5.0)
+      '@rollup/pluginutils': 5.1.3(rollup@3.29.5)
+      rollup: 3.29.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@rollup/plugin-commonjs@28.0.1(rollup@3.29.5):
     resolution: {integrity: sha512-+tNWdlWKbpB3WgBN7ijjYkq9X5uhjmcvyjEght4NmH5fAU++zfQzAJ6wumLS+dNcvwEZhKx2Z+skY8m7v0wGSA==}
@@ -12188,6 +12247,14 @@ packages:
       typescript: 5.6.3
     optionalDependencies:
       '@babel/code-frame': 7.26.2
+    dev: true
+
+  /rollup-plugin-peer-deps-external@2.2.4(rollup@3.29.5):
+    resolution: {integrity: sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==}
+    peerDependencies:
+      rollup: '*'
+    dependencies:
+      rollup: 3.29.5
     dev: true
 
   /rollup-plugin-typescript2@0.35.0(rollup@3.29.5)(typescript@5.5.4):
