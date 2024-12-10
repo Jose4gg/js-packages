@@ -29,7 +29,7 @@ export default [
         },
       }),
     ],
-    external: ['styled-components', 'react', 'react/jsx-runtime', '@nayya-com/typography'],
+    external: ['styled-components', 'react', 'react/jsx-runtime'],
   },
   {
     input: 'src/index.ts',
