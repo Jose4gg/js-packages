@@ -1,5 +1,11 @@
 # @nayya/ui
 
+## 0.0.12
+
+### Patch Changes
+
+- ca35b45: update packages to not longer use workspace:\*
+
 ## 0.0.11
 
 ### Patch Changes

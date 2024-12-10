@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/tsconfig",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Shared TypeScript configurations",
   "private": false,
   "license": "MIT",

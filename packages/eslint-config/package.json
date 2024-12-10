@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/eslint-config",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "Shared ESLint configurations",
   "private": false,
   "main": "common.js",
@@ -17,7 +17,7 @@
     "publish-package": "pnpm publish"
   },
   "dependencies": {
-    "@nayya-com/eslint-plugin-custom": "0.0.15",
+    "@nayya-com/eslint-plugin-custom": "0.0.16",
     "@eslint/js": "^9.14.0",
     "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "^8.13.0",

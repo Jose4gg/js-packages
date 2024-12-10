@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/tooltip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -22,15 +22,15 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {
-    "@nayya-com/wardrobe": "^0.0.16",
+    "@nayya-com/wardrobe": "^0.0.17",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.3"
   },
   "devDependencies": {
-    "@nayya-com/eslint-config": "0.0.28",
-    "@nayya-com/tsconfig": "0.1.16",
+    "@nayya-com/eslint-config": "0.0.29",
+    "@nayya-com/tsconfig": "0.1.17",
     "typescript": "5.5.4",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-commonjs": "^28.0.1",

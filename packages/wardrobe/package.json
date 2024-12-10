@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/wardrobe",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -34,8 +34,8 @@
     "typescript": "5.5.4"
   },
   "devDependencies": {
-    "@nayya-com/eslint-config": "0.0.28",
-    "@nayya-com/tsconfig": "0.1.16",
+    "@nayya-com/eslint-config": "0.0.29",
+    "@nayya-com/tsconfig": "0.1.17",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@types/styled-components": "^5.1.34",

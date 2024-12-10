@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.17
+
+### Patch Changes
+
+- ca35b45: update packages to not longer use workspace:\*
+
 ## 0.1.16
 
 ### Patch Changes

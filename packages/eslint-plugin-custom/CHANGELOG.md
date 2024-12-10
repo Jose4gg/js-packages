@@ -1,5 +1,11 @@
 # @nayya-com/eslint-plugin-custom
 
+## 0.0.16
+
+### Patch Changes
+
+- ca35b45: update packages to not longer use workspace:\*
+
 ## 0.0.15
 
 ### Patch Changes

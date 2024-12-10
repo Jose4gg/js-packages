@@ -1,5 +1,13 @@
 # @nayya-com/eslint-config
 
+## 0.0.29
+
+### Patch Changes
+
+- ca35b45: update packages to not longer use workspace:\*
+- Updated dependencies [ca35b45]
+  - @nayya-com/eslint-plugin-custom@0.0.16
+
 ## 0.0.28
 
 ### Patch Changes

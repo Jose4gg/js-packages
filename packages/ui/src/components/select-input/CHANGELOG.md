@@ -1,5 +1,14 @@
 # @nayya-com/select-input
 
+## 0.0.12
+
+### Patch Changes
+
+- ca35b45: update packages to not longer use workspace:\*
+- Updated dependencies [ca35b45]
+  - @nayya-com/typography@0.0.17
+  - @nayya-com/wardrobe@0.0.17
+
 ## 0.0.11
 
 ### Patch Changes

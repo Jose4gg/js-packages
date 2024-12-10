@@ -1,5 +1,14 @@
 # @nayya-com/date-input
 
+## 0.0.11
+
+### Patch Changes
+
+- ca35b45: update packages to not longer use workspace:\*
+- Updated dependencies [ca35b45]
+  - @nayya-com/text-input@0.0.15
+  - @nayya-com/wardrobe@0.0.17
+
 ## 0.0.10
 
 ### Patch Changes
