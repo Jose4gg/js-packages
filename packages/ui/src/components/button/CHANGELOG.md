@@ -1,5 +1,13 @@
 # @nayya-com/button
 
+## 0.0.13
+
+### Patch Changes
+
+- 617c0ba: bump version
+- Updated dependencies [617c0ba]
+  - @nayya-com/wardrobe@0.0.18
+
 ## 0.0.12
 
 ### Patch Changes

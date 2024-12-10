@@ -1,5 +1,14 @@
 # text-input
 
+## 0.0.16
+
+### Patch Changes
+
+- 617c0ba: bump version
+- Updated dependencies [617c0ba]
+  - @nayya-com/typography@0.0.18
+  - @nayya-com/wardrobe@0.0.18
+
 ## 0.0.15
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @nayya-com/wardrobe
 
+## 0.0.18
+
+### Patch Changes
+
+- 617c0ba: bump version
+
 ## 0.0.17
 
 ### Patch Changes
