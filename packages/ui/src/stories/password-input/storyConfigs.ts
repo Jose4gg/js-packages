@@ -1,5 +1,6 @@
 import { StoryObj } from '@storybook/react';
-import PasswordInput from '../../components/password-input';
+
+import { PasswordInput } from '../../components';
 
 enum StoryConfigs {
   password = 'password',
@@ -15,10 +16,7 @@ const defaultArgs = {
   type: 'password',
 };
 
-export const storyConfigs: Record<
-  StoryConfigs,
-  StoryObj<typeof PasswordInput>
-> = {
+export const storyConfigs: Record<StoryConfigs, StoryObj<typeof PasswordInput>> = {
   password: {
     args: {
       ...defaultArgs,

@@ -1,14 +1,11 @@
 import { StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { RadioButton } from '../../components/radio-button';
 
+import { RadioButton } from '../../components';
 import Tooth from '../checkbox/assets/Tooth';
 import ToothDisabled from '../checkbox/assets/ToothDisabled';
 
-export const radioButtonConfigs: Record<
-  string,
-  StoryObj<typeof RadioButton>
-> = {
+export const radioButtonConfigs: Record<string, StoryObj<typeof RadioButton>> = {
   default: {
     args: {
       id: 'radio-button-storybook-demo',

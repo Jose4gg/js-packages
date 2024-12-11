@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import PercentageInput from '../../components/percentage-input';
+
+import { PercentageInput } from '../../components';
 
 import { storyConfigs } from './storyConfigs';
 

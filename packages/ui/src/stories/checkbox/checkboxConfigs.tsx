@@ -1,6 +1,7 @@
 import { StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { Checkbox } from '../../components/checkbox';
+
+import { Checkbox } from '../../components';
 
 import Tooth from './assets/Tooth';
 import ToothDisabled from './assets/ToothDisabled';

@@ -1,6 +1,7 @@
 import { StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { CheckboxGroup } from '../../components/checkbox';
+
+import { CheckboxGroup } from '../../components';
 import { CheckboxProps } from '../../components/checkbox/src/types';
 
 import Tooth from './assets/Tooth';
@@ -29,10 +30,7 @@ const options: CheckboxProps[] = [
   },
 ];
 
-export const checkboxGroupConfigs: Record<
-  string,
-  StoryObj<typeof CheckboxGroup>
-> = {
+export const checkboxGroupConfigs: Record<string, StoryObj<typeof CheckboxGroup>> = {
   default: {
     args: {
       label: 'Checkbox Group',
@@ -101,10 +99,7 @@ const error = {
   helperText: 'This is an error message',
 };
 
-export const checkboxGroupErrorConfigs: Record<
-  string,
-  StoryObj<typeof CheckboxGroup>
-> = {
+export const checkboxGroupErrorConfigs: Record<string, StoryObj<typeof CheckboxGroup>> = {
   defaultError: {
     args: {
       ...checkboxGroupConfigs.default.args,

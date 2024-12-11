@@ -1,6 +1,6 @@
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
-import { RadioButton } from '../../../components/radio-button';
 
+import { RadioButton } from '../../../components';
 import { radioButtonConfigs } from '../radioButtonConfigs';
 
 const meta: Meta<typeof RadioButton> = {

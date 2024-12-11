@@ -1,7 +1,8 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { Meta, StoryObj } from '@storybook/react';
 import { screen, userEvent } from '@storybook/testing-library';
-import Tooltip from '../../components/tooltip';
+
+import { Tooltip } from '../../components';
 
 import StylesDecorator from './StylesDecorator';
 import { Wrapper } from './Tooltip.styled';
@@ -131,11 +132,9 @@ export const TopWithNotEnoughSpaceRight: Story = topWithNotEnoughSpaceRight;
 
 export const TopWithNotEnoughSpaceLeft: Story = topWithNotEnoughSpaceLeft;
 
-export const TopWithNotEnoughSpaceTopAndRight: Story =
-  topWithNotEnoughSpaceAboveAndRight;
+export const TopWithNotEnoughSpaceTopAndRight: Story = topWithNotEnoughSpaceAboveAndRight;
 
-export const TopWithNotEnoughSpaceTopAndLeft: Story =
-  topWithNotEnoughSpaceAboveAndLeft;
+export const TopWithNotEnoughSpaceTopAndLeft: Story = topWithNotEnoughSpaceAboveAndLeft;
 
 export const Right: Story = right;
 
@@ -147,19 +146,15 @@ export const RightWithNotEnoughSpaceBelow: Story = rightWithNotEnoughSpaceBelow;
 
 export const Bottom: Story = bottom;
 
-export const BottomWithNotEnoughSpaceBelow: Story =
-  bottomWithNotEnoughSpaceBelow;
+export const BottomWithNotEnoughSpaceBelow: Story = bottomWithNotEnoughSpaceBelow;
 
-export const BottomWithNotEnoughSpaceRight: Story =
-  bottomWithNotEnoughSpaceRight;
+export const BottomWithNotEnoughSpaceRight: Story = bottomWithNotEnoughSpaceRight;
 
 export const BottomWithNotEnoughSpaceLeft: Story = bottomWithNotEnoughSpaceLeft;
 
-export const BottomWithNotEnoughSpaceBelowAndRight: Story =
-  bottomWithNotEnoughSpaceBelowAndRight;
+export const BottomWithNotEnoughSpaceBelowAndRight: Story = bottomWithNotEnoughSpaceBelowAndRight;
 
-export const BottomWithNotEnoughSpaceBelowAndLeft: Story =
-  bottomWithNotEnoughSpaceBelowAndLeft;
+export const BottomWithNotEnoughSpaceBelowAndLeft: Story = bottomWithNotEnoughSpaceBelowAndLeft;
 
 export const Left: Story = left;
 
@@ -174,28 +169,21 @@ export const WithLabel: Story = withLabel;
 
 export const WithTextTrigger: Story = withTextTrigger;
 
-export const WithTextTriggerAndNotEnoughSpaceAbove: Story =
-  withTextTriggerAndNotEnoughSpaceAbove;
+export const WithTextTriggerAndNotEnoughSpaceAbove: Story = withTextTriggerAndNotEnoughSpaceAbove;
 
-export const WithTextTriggerAndNotEnoughSpaceRight: Story =
-  withTextTriggerAndNotEnoughSpaceRight;
+export const WithTextTriggerAndNotEnoughSpaceRight: Story = withTextTriggerAndNotEnoughSpaceRight;
 
-export const WithTextTriggerAndNotEnoughSpaceBelow: Story =
-  withTextTriggerAndNotEnoughSpaceBelow;
+export const WithTextTriggerAndNotEnoughSpaceBelow: Story = withTextTriggerAndNotEnoughSpaceBelow;
 
-export const WithTextTriggerAndNotEnoughSpaceLeft: Story =
-  withTextTriggerAndNotEnoughSpaceLeft;
+export const WithTextTriggerAndNotEnoughSpaceLeft: Story = withTextTriggerAndNotEnoughSpaceLeft;
 
 export const WithLongerTextTrigger: Story = withLongerTextTrigger;
 
-export const WithTextTriggerAndLeftPlacement: Story =
-  withTextTriggerAndLeftPlacement;
+export const WithTextTriggerAndLeftPlacement: Story = withTextTriggerAndLeftPlacement;
 
-export const WithTextTriggerAndRightPlacement: Story =
-  withTextTriggerAndRightPlacement;
+export const WithTextTriggerAndRightPlacement: Story = withTextTriggerAndRightPlacement;
 
-export const WithTextTriggerAndBottomPlacement: Story =
-  withTextTriggerAndBottomPlacement;
+export const WithTextTriggerAndBottomPlacement: Story = withTextTriggerAndBottomPlacement;
 
 export const MobileBase: Story = baseMobile;
 MobileBase.play = clickAction;
@@ -296,6 +284,5 @@ const nonMobileStories = [
 ];
 
 nonMobileStories.forEach((story) => {
-  // eslint-disable-next-line no-param-reassign
   story.play = hoverAction;
 });

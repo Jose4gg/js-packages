@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/react';
-import Pill from '../../components/pill';
 
+import { Pill } from '../../components';
 import CheckMark from '../../icons/CheckMark';
 import Mortgage from '../../icons/Mortgage';
 import Waived from '../../icons/Waived';

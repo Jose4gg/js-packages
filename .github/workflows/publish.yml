@@ -49,6 +49,7 @@ jobs:
         run: |
           echo "@nayya-com:registry=https://npm.pkg.github.com/" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_ACCESS_TOKEN }}" >> .npmrc
+          echo "link-workspace-packages=false" >> .npmrc
 
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile

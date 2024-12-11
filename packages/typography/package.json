@@ -23,10 +23,10 @@
     "publish-package": "pnpm publish",
     "test": "echo test",
     "typecheck": "pnpm tsc --noEmit",
-    "postinstall": "pnpm build"
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
-    "@nayya-com/wardrobe": "0.0.18",
+    "@nayya-com/wardrobe": "0.0.17",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"

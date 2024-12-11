@@ -1,7 +1,7 @@
 import { StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import Select from '../../components/select-input';
+import { SelectInput } from '../../components';
 
 const options = [
   { value: 'apple', label: 'Apple' },
@@ -9,7 +9,7 @@ const options = [
   { value: 'banana', label: 'Banana' },
 ];
 
-export const storyConfigs: Record<string, StoryObj<typeof Select>> = {
+export const storyConfigs: Record<string, StoryObj<typeof SelectInput>> = {
   default: {
     args: {
       id: 'select-id',
