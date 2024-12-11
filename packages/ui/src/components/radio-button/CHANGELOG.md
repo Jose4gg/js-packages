@@ -1,5 +1,14 @@
 # @nayya-com/radio-button
 
+## 0.0.5
+
+### Patch Changes
+
+- 49a2da9: bump versions
+- Updated dependencies [49a2da9]
+  - @nayya-com/typography@0.0.19
+  - @nayya-com/wardrobe@0.0.19
+
 ## 0.0.4
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @nayya-com/number-input
 
+## 0.0.5
+
+### Patch Changes
+
+- 49a2da9: bump versions
+- Updated dependencies [e93901e]
+- Updated dependencies [49a2da9]
+  - @nayya-com/text-input@0.0.17
+
 ## 0.0.4
 
 ### Patch Changes

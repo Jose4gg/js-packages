@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/date-input",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -23,14 +23,14 @@
   },
   "dependencies": {
     "@nayya-com/text-input": "workspace:*",
-    "@nayya-com/wardrobe": "0.0.17",
+    "@nayya-com/wardrobe": "0.0.19",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@nayya-com/eslint-config": "0.0.30",
-    "@nayya-com/tsconfig": "0.1.18",
+    "@nayya-com/eslint-config": "0.0.31",
+    "@nayya-com/tsconfig": "0.1.19",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "rollup": "^3.26.0",
