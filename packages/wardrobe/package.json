@@ -22,7 +22,7 @@
     "lint": "eslint .",
     "typecheck": "pnpm tsc --noEmit",
     "publish-package": "pnpm publish",
-    "postinstall": "pnpm build"
+    "prepare": "pnpm build"
   },
   "dependencies": {
     "lodash": "^4.17.21",
