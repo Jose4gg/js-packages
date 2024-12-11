@@ -23,4 +23,4 @@
 '@nayya/ui': patch
 ---
 
-bump version
+bump
