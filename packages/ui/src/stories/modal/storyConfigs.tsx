@@ -1,4 +1,5 @@
 import { StoryObj } from '@storybook/react';
+
 import Modal from '../../components/modal';
 
 import ModalWithOpenButton from './ModalWithOpenButton';
