@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fireEvent } from '@storybook/testing-library';
-import DateInput from '@components/date-input';
+
+import DateInput from '../../components/date-input';
 
 const meta: Meta<typeof DateInput> = {
   component: DateInput,
