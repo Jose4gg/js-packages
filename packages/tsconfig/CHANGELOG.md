@@ -1,5 +1,11 @@
 # @nayya-com/tsconfig
 
+## 0.1.19
+
+### Patch Changes
+
+- 49a2da9: bump versions
+
 ## 0.1.18
 
 ### Patch Changes
