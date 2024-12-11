@@ -23,7 +23,7 @@
     "publish-package": "pnpm publish",
     "test": "echo test",
     "typecheck": "pnpm tsc --noEmit",
-    "prepare": "pnpm build"
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "@nayya-com/wardrobe": "0.0.17",
