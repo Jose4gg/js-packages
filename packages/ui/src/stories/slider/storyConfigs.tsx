@@ -1,5 +1,6 @@
 import { StoryObj } from '@storybook/react';
-import Slider from '../../components/slider';
+
+import { Slider } from '../../components';
 
 export const storyConfigs: Record<string, StoryObj<typeof Slider>> = {
   Primary: {

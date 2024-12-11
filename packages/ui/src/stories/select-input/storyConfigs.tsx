@@ -1,7 +1,7 @@
 import { StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import Select from '../../components/select-input';
+import { Select } from '../../components';
 
 const options = [
   { value: 'apple', label: 'Apple' },

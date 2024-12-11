@@ -1,5 +1,6 @@
 import { StoryObj } from '@storybook/react';
-import PercentageInput from '../../components/percentage-input';
+
+import { PercentageInput } from '../../components';
 
 const defaultArgs = {
   id: 'storybookDemo',
