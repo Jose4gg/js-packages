@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fireEvent } from '@storybook/testing-library';
-import DateInput from '../../components/date-input';
+import DateInput from '@components/date-input';
 
 const meta: Meta<typeof DateInput> = {
   component: DateInput,
@@ -42,10 +42,9 @@ DateEntered.play = async ({ args }) => {
   if (input) {
     const characters = '12252023';
 
-    // eslint-disable-next-line no-restricted-syntax
     for (const char of characters) {
       fireEvent.input(input, { target: { value: input.value + char } });
-      // eslint-disable-next-line no-await-in-loop, no-promise-executor-return
+
       await new Promise((resolve) => setTimeout(resolve, 100));
     }
   }
