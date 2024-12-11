@@ -1,5 +1,14 @@
 # @nayya-com/percentage-input
 
+## 0.0.4
+
+### Patch Changes
+
+- 617c0ba: bump version
+- Updated dependencies [617c0ba]
+  - @nayya-com/text-input@0.0.16
+  - @nayya-com/wardrobe@0.0.18
+
 ## 0.0.3
 
 ### Patch Changes

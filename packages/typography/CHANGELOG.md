@@ -1,5 +1,13 @@
 # @nayya-com/typography
 
+## 0.0.18
+
+### Patch Changes
+
+- 617c0ba: bump version
+- Updated dependencies [617c0ba]
+  - @nayya-com/wardrobe@0.0.18
+
 ## 0.0.17
 
 ### Patch Changes
