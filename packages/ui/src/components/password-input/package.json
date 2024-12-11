@@ -22,7 +22,7 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {
-    "@nayya-com/text-input": "0.0.13",
+    "@nayya-com/text-input": "workspace:*",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"
   },

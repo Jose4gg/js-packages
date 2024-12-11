@@ -1,5 +1,6 @@
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
-import SelectInput from '@components/select-input';
+
+import { SelectInput } from '../../components';
 
 import { storyConfigs } from './storyConfigs';
 

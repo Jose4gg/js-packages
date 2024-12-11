@@ -1,10 +1,8 @@
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
-import { CheckboxGroup } from '../../components/checkbox';
 
-import {
-  checkboxGroupConfigs,
-  checkboxGroupErrorConfigs,
-} from './checkboxGroupConfigs';
+import { CheckboxGroup } from '../../components';
+
+import { checkboxGroupConfigs, checkboxGroupErrorConfigs } from './checkboxGroupConfigs';
 
 const meta: Meta<typeof CheckboxGroup> = {
   component: CheckboxGroup,

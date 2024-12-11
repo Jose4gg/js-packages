@@ -504,8 +504,8 @@ importers:
   packages/ui/src/components/date-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: 0.0.13
-        version: 0.0.13(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../text-input
       '@nayya-com/wardrobe':
         specifier: 0.0.17
         version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
@@ -593,8 +593,8 @@ importers:
   packages/ui/src/components/number-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: 0.0.13
-        version: 0.0.13(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../text-input
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -636,8 +636,8 @@ importers:
   packages/ui/src/components/password-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: 0.0.13
-        version: 0.0.13(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../text-input
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -673,8 +673,8 @@ importers:
   packages/ui/src/components/percentage-input:
     dependencies:
       '@nayya-com/text-input':
-        specifier: 0.0.13
-        version: 0.0.13(@babel/core@7.26.0)(react-dom@18.3.1)
+        specifier: workspace:*
+        version: link:../text-input
       '@nayya-com/wardrobe':
         specifier: 0.0.17
         version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
@@ -3693,34 +3693,9 @@ packages:
     dependencies:
       requireindex: 1.2.0
 
-  /@nayya-com/text-input@0.0.13(@babel/core@7.26.0)(react-dom@18.3.1):
-    resolution: {integrity: sha512-krXAqWgho4Q3nluV/214s6VeWbtpj5UzB0P/XCLDdZmd0O6v1SQPwenMejUJUIk9RC1OyXgDt6CY3p1ax6AVeQ==, tarball: https://npm.pkg.github.com/download/@nayya-com/text-input/0.0.13/cb4649505a61f040809948041c854e0ea594cc1f}
-    dependencies:
-      '@nayya-com/typography': 0.0.15(@babel/core@7.26.0)(react-dom@18.3.1)
-      '@nayya-com/wardrobe': 0.0.15(@babel/core@7.26.0)
-      classnames: 2.5.1
-      react: 18.3.1
-      styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - react-dom
-    dev: false
-
   /@nayya-com/tsconfig@0.1.18:
     resolution: {integrity: sha512-MhimPh2iFXaAvpzZ/o61fLnTmMt5nhAwpyTGRoeYoEuYg02c2gV66dlBn52mp3vYZsAEiUGO85JjqQ1tpd3Wpw==, tarball: https://npm.pkg.github.com/download/@nayya-com/tsconfig/0.1.18/4e42b1d51da25177f99110c3cd652a81739013d0}
     dev: true
-
-  /@nayya-com/typography@0.0.15(@babel/core@7.26.0)(react-dom@18.3.1):
-    resolution: {integrity: sha512-Q+QYZite5h0ZKOGXprK5EFHKstimJW/1kyqoPt7Z/Q0Dg4E4I4MGpi6gvxALOI3sjetX/wd/5qVNWfl8e4CmFw==, tarball: https://npm.pkg.github.com/download/@nayya-com/typography/0.0.15/a329530a48f6b158331d90e3446150023c5d04cd}
-    dependencies:
-      '@nayya-com/wardrobe': 0.0.15(@babel/core@7.26.0)
-      classnames: 2.5.1
-      react: 18.3.1
-      styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - react-dom
-    dev: false
 
   /@nayya-com/typography@0.0.17(react@18.3.1)(styled-components@6.1.13):
     resolution: {integrity: sha512-OcQTtkUO3NysCYhm+DRZqjZxawSvejmqDvwfTu5HtU5bgGXci35mOzsgE30S5GtMy69gYrOwKo6ukuVCC7Q8vA==, tarball: https://npm.pkg.github.com/download/@nayya-com/typography/0.0.17/d831af04b3aacb923910011b16618980812e8567}
@@ -3732,20 +3707,6 @@ packages:
       classnames: 2.5.1
       react: 18.3.1
       styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
-    dev: false
-
-  /@nayya-com/wardrobe@0.0.15(@babel/core@7.26.0):
-    resolution: {integrity: sha512-XYCbiKPGHw55dLI9aTxRaEXDfyQUFqZhAMN2bWFrNnX1Pd0n2tHT/t9BgUsxeVfy88PRfO+KqxJnnRbKg9A4Rw==, tarball: https://npm.pkg.github.com/download/@nayya-com/wardrobe/0.0.15/22e47114b2a39bdd112042e93468f381f352ff53}
-    dependencies:
-      lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-is: 18.3.1
-      react-router-dom: 6.28.0(react-dom@18.3.1)(react@18.3.1)
-      styled-components: 5.3.9(@babel/core@7.26.0)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)
-      typescript: 5.5.4
-    transitivePeerDependencies:
-      - '@babel/core'
     dev: false
 
   /@nayya-com/wardrobe@0.0.17(react@18.3.1)(styled-components@6.1.13):

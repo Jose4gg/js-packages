@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Pill from '../../../components/pill';
 
+import { Pill } from '../../../components';
 import { storyConfigs } from '../storyConfigs';
 
 const meta: Meta<typeof Pill> = {
@@ -34,13 +34,11 @@ export const RecommendedWithNoText: Story = recommendedWithNoText;
 
 export const RecommendedBorderless: Story = recommendedBorderless;
 
-export const RecommendedBorderlessWithNoText: Story =
-  recommendedBorderlessWithNoText;
+export const RecommendedBorderlessWithNoText: Story = recommendedBorderlessWithNoText;
 
 export const RecommendedBordered: Story = recommendedBordered;
 
-export const RecommendedBorderedWithNoText: Story =
-  recommendedBorderedWithNoText;
+export const RecommendedBorderedWithNoText: Story = recommendedBorderedWithNoText;
 
 export const PlanHighlights: Story = planHighlights;
 

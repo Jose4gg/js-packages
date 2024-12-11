@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import NumberInput from '../../components/number-input';
+
+import { NumberInput } from '../../components';
 
 import { storyConfigs } from './storyConfigs';
 

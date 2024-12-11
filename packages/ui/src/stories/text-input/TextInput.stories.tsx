@@ -1,7 +1,7 @@
 // Replace your-renderer with the renderer you are using (e.g., react, vue3, etc.)
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 
-import TextInput from '../../components/text-input';
+import { TextInput } from '../../components';
 
 import { storyConfigs } from './storyConfigs';
 

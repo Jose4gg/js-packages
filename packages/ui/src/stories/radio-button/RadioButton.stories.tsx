@@ -1,5 +1,6 @@
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
-import { RadioButton } from '../../components/radio-button';
+
+import { RadioButton } from '../../components';
 
 import { radioButtonConfigs } from './radioButtonConfigs';
 
@@ -51,11 +52,9 @@ export const DefaultChecked: Story = defaultChecked;
 
 export const DefaultWithLabelContent: Story = defaultWithLabelContent;
 
-export const DefaultWithLabelContentHovered: Story =
-  defaultWithLabelContentHovered;
+export const DefaultWithLabelContentHovered: Story = defaultWithLabelContentHovered;
 
-export const DefaultCheckedWithLabelContent: Story =
-  defaultCheckedWithLabelContent;
+export const DefaultCheckedWithLabelContent: Story = defaultCheckedWithLabelContent;
 
 export const NoBorder: Story = noBorder;
 
@@ -65,13 +64,11 @@ export const NoBorderChecked: Story = noBorderChecked;
 
 export const DisabledDefault: Story = disabledDefault;
 
-export const DisabledDefaultWithLabelContent: Story =
-  disabledDefaultWithLabelContent;
+export const DisabledDefaultWithLabelContent: Story = disabledDefaultWithLabelContent;
 
 export const DisabledDefaultChecked: Story = disabledDefaultChecked;
 
-export const DisabledDefaultCheckedWithLabelContent: Story =
-  disabledDefaultCheckedWithLabelContent;
+export const DisabledDefaultCheckedWithLabelContent: Story = disabledDefaultCheckedWithLabelContent;
 
 export const BorderedWide: Story = borderedWide;
 

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import PasswordInput from '../../../components/password-input';
 
+import { PasswordInput } from '../../../components';
 import { storyConfigs } from '../storyConfigs';
 
 const meta: Meta<typeof PasswordInput> = {
@@ -14,8 +14,7 @@ export default meta;
 
 export type Story = StoryObj<typeof PasswordInput>;
 
-const { password, disabled, error, loading, warning, withHelperText } =
-  storyConfigs;
+const { password, disabled, error, loading, warning, withHelperText } = storyConfigs;
 
 export const Password: Story = password;
 
