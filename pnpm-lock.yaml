@@ -123,8 +123,8 @@ importers:
         specifier: ^9.14.0
         version: 9.16.0
       '@nayya-com/eslint-plugin-custom':
-        specifier: 0.0.17
-        version: 0.0.17
+        specifier: 0.0.18
+        version: 0.0.18
       '@types/eslint__js':
         specifier: ^8.42.3
         version: 8.42.3
@@ -201,8 +201,8 @@ importers:
   packages/typography:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -226,11 +226,11 @@ importers:
         specifier: ^7.18.6
         version: 7.26.3(@babel/core@7.26.0)
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-babel':
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.26.0)(rollup@3.29.5)
@@ -275,11 +275,11 @@ importers:
         specifier: ^3.2.2
         version: 3.2.2(react@18.3.1)(storybook@8.4.7)
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@storybook/addon-essentials':
         specifier: ^8.4.4
         version: 8.4.7(@types/react@18.3.14)(storybook@8.4.7)
@@ -326,11 +326,11 @@ importers:
   packages/ui/src/components/accordion:
     dependencies:
       '@nayya-com/typography':
-        specifier: ^0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: ^0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -345,11 +345,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -372,11 +372,11 @@ importers:
   packages/ui/src/components/autocomplete:
     dependencies:
       '@nayya-com/typography':
-        specifier: ^0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: ^0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -391,11 +391,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -418,8 +418,8 @@ importers:
   packages/ui/src/components/button:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -434,11 +434,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -461,11 +461,11 @@ importers:
   packages/ui/src/components/checkbox:
     dependencies:
       '@nayya-com/typography':
-        specifier: ^0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: ^0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -477,11 +477,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -507,8 +507,8 @@ importers:
         specifier: workspace:*
         version: link:../text-input
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -520,11 +520,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.7.2)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.7.2)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -547,8 +547,8 @@ importers:
   packages/ui/src/components/modal:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -566,11 +566,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -609,11 +609,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -646,11 +646,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -676,8 +676,8 @@ importers:
         specifier: workspace:*
         version: link:../text-input
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -692,11 +692,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -719,8 +719,8 @@ importers:
   packages/ui/src/components/pill:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -732,11 +732,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -759,11 +759,11 @@ importers:
   packages/ui/src/components/radio-button:
     dependencies:
       '@nayya-com/typography':
-        specifier: ^0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: ^0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -781,11 +781,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -808,11 +808,11 @@ importers:
   packages/ui/src/components/select-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: ^0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: ^0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -827,11 +827,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.7.2)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.7.2)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -857,8 +857,8 @@ importers:
   packages/ui/src/components/slider:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -870,11 +870,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -897,8 +897,8 @@ importers:
   packages/ui/src/components/switch:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -907,11 +907,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -934,11 +934,11 @@ importers:
   packages/ui/src/components/text-input:
     dependencies:
       '@nayya-com/typography':
-        specifier: ^0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: ^0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -950,11 +950,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -977,8 +977,8 @@ importers:
   packages/ui/src/components/tooltip:
     dependencies:
       '@nayya-com/wardrobe':
-        specifier: 0.0.17
-        version: 0.0.17(react@18.3.1)(styled-components@6.1.13)
+        specifier: 0.0.19
+        version: 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -993,11 +993,11 @@ importers:
         version: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -1042,11 +1042,11 @@ importers:
         version: 5.5.4
     devDependencies:
       '@nayya-com/eslint-config':
-        specifier: 0.0.30
-        version: 0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
+        specifier: 0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4)
       '@nayya-com/tsconfig':
-        specifier: 0.1.18
-        version: 0.1.18
+        specifier: 0.1.19
+        version: 0.1.19
       '@rollup/plugin-commonjs':
         specifier: ^28.0.1
         version: 28.0.1(rollup@3.29.5)
@@ -3625,14 +3625,14 @@ packages:
       react: 18.3.1
     dev: true
 
-  /@nayya-com/eslint-config@0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-yXvazM42Qs9yuWUc29MGtrlUiruhSssxLH0iRyE2jH433mATfxTeYvOlAUYlYzUhsV3zVVsKdaV6q4+WF0gwSQ==, tarball: https://npm.pkg.github.com/download/@nayya-com/eslint-config/0.0.30/5d9e6a5d89692c903601522dc3c2ac722f754e6e}
+  /@nayya-com/eslint-config@0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.5.4):
+    resolution: {integrity: sha512-zsGMEq+w3yX/IIWY6EfH3ikAM/PARDiJYcS0r34tssN8eW3Su7umv8TkVXhZcZGOdFKxvVk2SCadYT44fqKDVA==, tarball: https://npm.pkg.github.com/download/@nayya-com/eslint-config/0.0.31/30247d59de739fa0b2c043a12e1c7ab531c366d2}
     peerDependencies:
       eslint: '>=9.0.0'
       typescript: '>=5.0.0'
     dependencies:
       '@eslint/js': 9.16.0
-      '@nayya-com/eslint-plugin-custom': 0.0.17
+      '@nayya-com/eslint-plugin-custom': 0.0.18
       '@types/eslint__js': 8.42.3
       '@typescript-eslint/eslint-plugin': 8.18.0(@typescript-eslint/parser@8.18.0)(eslint@9.16.0)(typescript@5.5.4)
       '@typescript-eslint/parser': 8.18.0(eslint@9.16.0)(typescript@5.5.4)
@@ -3656,14 +3656,14 @@ packages:
       - supports-color
     dev: true
 
-  /@nayya-com/eslint-config@0.0.30(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.7.2):
-    resolution: {integrity: sha512-yXvazM42Qs9yuWUc29MGtrlUiruhSssxLH0iRyE2jH433mATfxTeYvOlAUYlYzUhsV3zVVsKdaV6q4+WF0gwSQ==, tarball: https://npm.pkg.github.com/download/@nayya-com/eslint-config/0.0.30/5d9e6a5d89692c903601522dc3c2ac722f754e6e}
+  /@nayya-com/eslint-config@0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.7.2):
+    resolution: {integrity: sha512-zsGMEq+w3yX/IIWY6EfH3ikAM/PARDiJYcS0r34tssN8eW3Su7umv8TkVXhZcZGOdFKxvVk2SCadYT44fqKDVA==, tarball: https://npm.pkg.github.com/download/@nayya-com/eslint-config/0.0.31/30247d59de739fa0b2c043a12e1c7ab531c366d2}
     peerDependencies:
       eslint: '>=9.0.0'
       typescript: '>=5.0.0'
     dependencies:
       '@eslint/js': 9.16.0
-      '@nayya-com/eslint-plugin-custom': 0.0.17
+      '@nayya-com/eslint-plugin-custom': 0.0.18
       '@types/eslint__js': 8.42.3
       '@typescript-eslint/eslint-plugin': 8.18.0(@typescript-eslint/parser@8.18.0)(eslint@9.16.0)(typescript@5.7.2)
       '@typescript-eslint/parser': 8.18.0(eslint@9.16.0)(typescript@5.7.2)
@@ -3687,30 +3687,30 @@ packages:
       - supports-color
     dev: true
 
-  /@nayya-com/eslint-plugin-custom@0.0.17:
-    resolution: {integrity: sha512-vsBSQWZ7Jp0DYxdewEt9fSfpGni5/FodVhww5mafvVaT/R5MKPQZharsjFOL+stX4B1j9MDnGzxMJs7nkNwEVQ==, tarball: https://npm.pkg.github.com/download/@nayya-com/eslint-plugin-custom/0.0.17/35cb41a105d1b761ea8c531880f7a60d7fb22cd6}
+  /@nayya-com/eslint-plugin-custom@0.0.18:
+    resolution: {integrity: sha512-OA1K7qErcBFPZE3bYdSrSKUVveXXQiG1NJsdMnFV03coKsVVSfEDL6Zxdt3Mf6/dBePGUPxznFWGnCpSBdV8jw==, tarball: https://npm.pkg.github.com/download/@nayya-com/eslint-plugin-custom/0.0.18/59054083d6073b85cce69d1d003a197b955f7ad0}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
       requireindex: 1.2.0
 
-  /@nayya-com/tsconfig@0.1.18:
-    resolution: {integrity: sha512-MhimPh2iFXaAvpzZ/o61fLnTmMt5nhAwpyTGRoeYoEuYg02c2gV66dlBn52mp3vYZsAEiUGO85JjqQ1tpd3Wpw==, tarball: https://npm.pkg.github.com/download/@nayya-com/tsconfig/0.1.18/4e42b1d51da25177f99110c3cd652a81739013d0}
+  /@nayya-com/tsconfig@0.1.19:
+    resolution: {integrity: sha512-e2BjtJsHWAApT0XmCopfXn25suEMTch7OYmHRIS494fd6Smynm/tKAVQXCYouJLrIfSfh2PTbWkR72VobQg1AQ==, tarball: https://npm.pkg.github.com/download/@nayya-com/tsconfig/0.1.19/4c2019641628723cf5accb852d396f80f10951f7}
     dev: true
 
-  /@nayya-com/typography@0.0.17(react@18.3.1)(styled-components@6.1.13):
-    resolution: {integrity: sha512-OcQTtkUO3NysCYhm+DRZqjZxawSvejmqDvwfTu5HtU5bgGXci35mOzsgE30S5GtMy69gYrOwKo6ukuVCC7Q8vA==, tarball: https://npm.pkg.github.com/download/@nayya-com/typography/0.0.17/d831af04b3aacb923910011b16618980812e8567}
+  /@nayya-com/typography@0.0.19(react@18.3.1)(styled-components@6.1.13):
+    resolution: {integrity: sha512-pzBusypSW7PdRfRfW4H3yNT8c2nxop9AhLcfHSU4mhD8eRJlVMQTnQskoA7nerAgmYti+5HQ5KqZeM2D93NNRQ==, tarball: https://npm.pkg.github.com/download/@nayya-com/typography/0.0.19/a82ac542ae55847bf0707d5158ce0688df1f46c1}
     peerDependencies:
       react: '>=18.0.0 <20.0.0'
       styled-components: ^6.0.0
     dependencies:
-      '@nayya-com/wardrobe': 0.0.17(react@18.3.1)(styled-components@6.1.13)
+      '@nayya-com/wardrobe': 0.0.19(react@18.3.1)(styled-components@6.1.13)
       classnames: 2.5.1
       react: 18.3.1
       styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     dev: false
 
-  /@nayya-com/wardrobe@0.0.17(react@18.3.1)(styled-components@6.1.13):
-    resolution: {integrity: sha512-Q/YoJzrJ6TpnvhIkYXxI3KDbFtxn8fzvXPRYs5K8yaiO/IexiQs4brOD9ZLViWOOxCBAzQ795z4AMkzEb8n99g==, tarball: https://npm.pkg.github.com/download/@nayya-com/wardrobe/0.0.17/73a9a5c04134ce8ab91de40c3adf335bd18e2c0d}
+  /@nayya-com/wardrobe@0.0.19(react@18.3.1)(styled-components@6.1.13):
+    resolution: {integrity: sha512-+bjs7ijmgRLvGYoEg0wlzsRyZiWdnwkwLBh47ZkkuOBS/SIfe1wpWGSooZwYH8Wwdfl9eOAQmN+JqsAewLrLmA==, tarball: https://npm.pkg.github.com/download/@nayya-com/wardrobe/0.0.19/6249dcc81285669b8d09d35ec636580229e21c4c}
     peerDependencies:
       react: '>=18.0.0 <20.0.0'
       styled-components: ^6.0.0

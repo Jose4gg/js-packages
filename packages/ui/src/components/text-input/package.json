@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/text-input",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",

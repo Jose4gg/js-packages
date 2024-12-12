@@ -1,5 +1,11 @@
 # text-input
 
+## 0.0.18
+
+### Patch Changes
+
+- bump text-input
+
 ## 0.0.17
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @nayya-com/password-input
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies
+  - @nayya-com/text-input@0.0.18
+
 ## 0.0.5
 
 ### Patch Changes
