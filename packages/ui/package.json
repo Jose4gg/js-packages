@@ -39,11 +39,13 @@
     "@storybook/test": "^8.4.4",
     "react-select-event": "^5.5.1",
     "storybook": "^8.4.4",
+    "styled-components": "^6.1.8",
     "tabbable": "^5.3.3",
     "typescript": "5.5.4"
   },
   "peerDependencies": {
     "react": ">=19.0.0 <20.0.0",
-    "react-dom": ">=19.0.0 <20.0.0"
+    "react-dom": ">=19.0.0 <20.0.0",
+    "styled-components": ">=6.0.0 <7.0.0"
   }
 }

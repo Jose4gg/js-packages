@@ -1,6 +1,6 @@
 {
   "extends": "@nayya-com/tsconfig/react-app.json",
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "vitest.config.mts"],
   "exclude": ["node_modules", "dist"],
   "compilerOptions": {
     "declaration": false,

@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 
-import { defineConfig, UserConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
+import { defineConfig, UserConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [react()] as UserConfig['plugins'],
@@ -16,6 +16,11 @@ export default defineConfig({
     },
     include: ['**/*.test[s].{js,jsx,ts,tsx}'],
     exclude: ['node_modules', 'dist'],
+    server: {
+      deps: {
+        inline: [/@nayya-com\/.*/],
+      },
+    },
   },
   resolve: {
     alias: {
