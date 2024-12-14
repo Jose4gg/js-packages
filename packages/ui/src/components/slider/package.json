@@ -18,7 +18,6 @@
     "lint": "eslint .",
     "typecheck": "pnpm tsc --noEmit",
     "publish-package": "pnpm publish",
-    "prepublishOnly": "pnpm build",
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {

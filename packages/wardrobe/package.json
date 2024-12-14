@@ -21,8 +21,7 @@
     "test": "echo test",
     "lint": "eslint .",
     "typecheck": "pnpm tsc --noEmit",
-    "publish-package": "pnpm publish",
-    "prepublishOnly": "pnpm build"
+    "publish-package": "pnpm publish"
   },
   "dependencies": {
     "lodash": "^4.17.21",
