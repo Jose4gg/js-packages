@@ -18,22 +18,21 @@
     "lint": "eslint .",
     "typecheck": "pnpm tsc --noEmit",
     "publish-package": "pnpm publish",
-    "prepublishOnly": "pnpm build",
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {
-    "@nayya-com/wardrobe": "0.0.19",
-    "classnames": "^2.5.1",
-    "react": "^18.2.0",
-    "styled-components": "^6.1.8"
+    "@nayya-com/wardrobe": "^0.0.19",
+    "classnames": "^2.5.1"
   },
   "devDependencies": {
     "@nayya-com/eslint-config": "0.0.31",
-    "@nayya-com/tsconfig": "0.1.19",
-    "typescript": "5.5.4",
+    "@nayya-com/tsconfig": "^0.1.19",
+    "typescript": "^5.5.4",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-commonjs": "^28.0.1",
     "rollup": "^3.26.0",
+    "react": "^19.0.0",
+    "styled-components": "^6.1.8",
     "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-typescript2": "^0.35.0"
   },

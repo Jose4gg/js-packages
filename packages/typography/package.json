@@ -22,8 +22,7 @@
     "lint": "eslint .",
     "publish-package": "pnpm publish",
     "test": "echo test",
-    "typecheck": "pnpm tsc --noEmit",
-    "prepublishOnly": "pnpm build"
+    "typecheck": "pnpm tsc --noEmit"
   },
   "dependencies": {
     "@nayya-com/wardrobe": "0.0.19",
