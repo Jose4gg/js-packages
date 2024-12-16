@@ -23,13 +23,28 @@
 Update to react 19, remove a lot of styled-components/react dependencies in favor of peer/dev deps
 
 - update password input to react 19
+- update accordion to react 19
+- update autocomplete to react 19
+- update button to react 19
+- update checkbox to react 19
+- update date-input to react 19
+- update modal to react 19
+- update number-input to react 19
+- update percentage-input to react 19
+- update pill to react 19
+- update radio-button to react 19
+- update select-input to react 19
+- update slider to react 19
+- update switch to react 19
+- update text-input to react 19
+- update tooltip to react 19
 - remove react from password input dependencies
 - add react to password input devDependencies
 - remove styled-components from password input dependencies
 - add styled-components to password input devDependencies
 - add styled-components to password input peerDependencies
 - add react to password input peerDependencies
-- replace workspace:\* with version for password-input in number-input dependencies
+- replace `workspace:*` with version number for password-input in number-input dependencies
 - remove prepublishOnly from typography
 - remove styled-components from ui dependencies
 - add styled-components to ui peerDependencies
@@ -70,7 +85,7 @@ Update to react 19, remove a lot of styled-components/react dependencies in favo
 - remove styled-components from date-input dependencies
 - add styled-components to date-input devDependencies
 - add styled-components to date-input peerDependencies
-- replace workspace:\* with version for text-input in date-input dependencies
+- replace `workspace:*` with version number for text-input in date-input dependencies
 - add react to date-input peerDependencies
 - add react to date-input devDependencies
 - remove prepublishOnly from date-input
@@ -92,11 +107,11 @@ Update to react 19, remove a lot of styled-components/react dependencies in favo
 - add react to number-input devDependencies
 - remove prepublishOnly from number-input
 - remove react from percentage-input dependencies
-- replace workspace:\* with version for text-input in number-input dependencies
+- replace `workspace:*` with version number for text-input in number-input dependencies
 - remove styled-components from percentage-input dependencies
 - add styled-components to percentage-input devDependencies
 - add styled-components to percentage-input peerDependencies
-- replace workspace:\* with version for text-input in percentage-input dependencies
+- replace `workspace:*` with version number for text-input in percentage-input dependencies
 - add react to percentage-input peerDependencies
 - add react to percentage-input devDependencies
 - remove prepublishOnly from percentage-input
