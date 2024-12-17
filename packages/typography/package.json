@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/typography",
-  "version": "0.0.19",
+  "version": "1.0.0",
   "type": "module",
   "exports": {
     ".": {
@@ -25,7 +25,7 @@
     "typecheck": "pnpm tsc --noEmit"
   },
   "dependencies": {
-    "@nayya-com/wardrobe": "0.0.19",
+    "@nayya-com/wardrobe": "0.1.0",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "styled-components": "^6.1.8"

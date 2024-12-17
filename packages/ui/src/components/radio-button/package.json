@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/radio-button",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -21,8 +21,8 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {
-    "@nayya-com/typography": "^0.0.19",
-    "@nayya-com/wardrobe": "^0.0.19",
+    "@nayya-com/typography": "^1.0.0",
+    "@nayya-com/wardrobe": "^0.1.0",
     "classnames": "^2.5.1",
     "lodash": "^4.17.21",
     "react-hook-form": "^7.40.0"

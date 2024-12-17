@@ -1,6 +1,6 @@
 {
   "name": "@nayya-com/number-input",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
@@ -21,7 +21,7 @@
     "build": "rm -rf lib/ && npx rollup --config rollup.config.mjs"
   },
   "dependencies": {
-    "@nayya-com/text-input": "^0.0.18",
+    "@nayya-com/text-input": "^1.0.0",
     "classnames": "^2.5.1",
     "react-number-format": "^5.3.4"
   },

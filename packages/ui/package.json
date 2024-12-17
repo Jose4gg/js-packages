@@ -1,7 +1,7 @@
 {
   "name": "@nayya/ui",
   "private": true,
-  "version": "0.0.14",
+  "version": "1.0.0",
   "type": "commonjs",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
