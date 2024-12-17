@@ -1,0 +1,13 @@
+{
+  "name": "@nayya-com/resetcss",
+  "version": "0.1.0",
+  "description": "Normalizes browser styles",
+  "private": false,
+  "license": "MIT",
+  "files": [
+    "index.css"
+  ],
+  "scripts": {
+    "publish-package": "pnpm publish"
+  }
+}
