@@ -1,0 +1,14 @@
+{
+  "extends": ["@nayya-com/tsconfig/react-library.json"],
+  "include": ["src", "index.d.ts"],
+  "exclude": ["node_modules", "lib", "src/**/*.css"],
+  "compilerOptions": {
+    "paths": {
+      "@stories/*": ["../../stories/*"],
+      "@tests/*": ["../../tests/*"],
+      "@components/*": ["../*"]
+    },
+    "baseUrl": ".",
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
+  }
+}

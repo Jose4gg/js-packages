@@ -196,6 +196,8 @@ importers:
         specifier: ^6.1.2
         version: 6.2.6
 
+  packages/resetcss: {}
+
   packages/tsconfig: {}
 
   packages/typography:
@@ -776,6 +778,39 @@ importers:
       react-hook-form:
         specifier: ^7.40.0
         version: 7.54.0(react@19.0.0)
+    devDependencies:
+      '@nayya-com/eslint-config':
+        specifier: ^0.0.31
+        version: 0.0.31(@types/eslint@9.6.1)(eslint@9.16.0)(typescript@5.7.2)
+      '@nayya-com/tsconfig':
+        specifier: ^0.1.19
+        version: 0.1.19
+      '@rollup/plugin-commonjs':
+        specifier: ^28.0.1
+        version: 28.0.1(rollup@3.29.5)
+      '@rollup/plugin-node-resolve':
+        specifier: ^15.1.0
+        version: 15.3.0(rollup@3.29.5)
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      rollup:
+        specifier: ^3.26.0
+        version: 3.29.5
+      rollup-plugin-dts:
+        specifier: ^5.3.0
+        version: 5.3.1(rollup@3.29.5)(typescript@5.7.2)
+      rollup-plugin-typescript2:
+        specifier: ^0.35.0
+        version: 0.35.0(rollup@3.29.5)(typescript@5.7.2)
+      styled-components:
+        specifier: ^6.1.8
+        version: 6.1.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      typescript:
+        specifier: ^5.5.4
+        version: 5.7.2
+
+  packages/ui/src/components/resetcss:
     devDependencies:
       '@nayya-com/eslint-config':
         specifier: ^0.0.31
